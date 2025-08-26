@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Revision>
+      <XMI fileName="urlUrl" version="2.1"/>
+      <VersionControl cvs="$Header: /CVS/cvsrepository/e2e_bridge/documentation/md_18_0/examples/Add-ons/URL/uml/urlUrl.xml,v 1.1.1.1 2014/05/21 08:08:38 tzimber Exp $"/>
+      <UML version="2.0"/>
+      <Composite name="UrlAdapterExample" version="7.6.0"/>
+      <CompilerInformation>
+         <BuildTime millis="1756235792364">Wed, Aug 27, 2025, 03:16:32 SGT</BuildTime>
+         <Compiler version="7.4.0"/>
+         <Builder runtime="2019.3" version="7.4.0"/>
+      </CompilerInformation>
+   </Revision>
+</table>

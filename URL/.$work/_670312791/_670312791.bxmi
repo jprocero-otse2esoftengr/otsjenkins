@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+         xmlns:ebp="http://e2e.ch/bridge/profile"
+         descriptor="yes"
+         enforcedImport="E2E_BRIDGE_BASE_COMPONENTS|_16_9_1763043c_1334833506675_583751_11200 E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_be002f9_1137677887489_628032_1 E2E_BRIDGE_BASE_COMPONENTS|_9_0_2_24400562_1119882133263_554201_141 E2E_BRIDGE_BASE_COMPONENTS|_9_0_2_24400562_1119864426430_621818_2 E2E_BRIDGE_BASE_COMPONENTS|_14_0_1_32690623_1224514979328_116374_4927 E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_be002f9_1135071988137_920600_2 E2E_BRIDGE_BASE_COMPONENTS|_14_0_1_32690623_1227865759515_297406_5256 E2E_BRIDGE_BASE_COMPONENTS|_14_0_b2002db_1195030989033_702066_2836 E2E_BRIDGE_BASE_COMPONENTS|_16_0_1_32690623_1238768448406_311491_4401 E2E_BRIDGE_BASE_COMPONENTS|_12_0_24400562_1172493862659_508204_814 E2E_BRIDGE_BASE_COMPONENTS|_16_9_1c8504c0_1448278243483_527883_14042 E2E_BRIDGE_BASE_COMPONENTS|_16_9_1c8504c0_1448278256610_632842_14047"
+         fileid="_670312791"
+         xmi:version="2.1"
+         xmifile.id="_670312791">
+   <xmi:Documentation>
+      <xmi:exporter>MagicDraw UML</xmi:exporter>
+      <xmi:exporterVersion>18.0</xmi:exporterVersion>
+   </xmi:Documentation>
+   <uml:Model xmlns:uml="http://schema.omg.org/spec/UML/2.0" name="Data"
+              xmi:id="_670312791|ROOT_MODEL_XMI.ID"
+              xmi:type="uml:Model">
+      <ebp:VersionedModel base_Model="_670312791|ROOT_MODEL_XMI.ID"
+                          cvs="$Header: /CVS/cvsrepository/e2e_bridge/documentation/md_18_0/examples/Add-ons/URL/uml/urlUrl.xml,v 1.1.1.1 2014/05/21 08:08:38 tzimber Exp $"
+                          xmi:id="_670312791|_12_0_1763043c_1170873864039_794899_915"/>
+      <ownedComment body="&lt;html&gt;&#xA;  &lt;head&gt;&#xA;&#x9;&#x9;&lt;style&gt;&#xA;&#x9;&#x9;&#x9;p {padding:0px; margin:0px;}&#xA;&#x9;&#x9;&lt;/style&gt;&#xA;&#x9;&lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;p&gt;&#xA;&lt;span style=&#34;font-size:18.0pt;&#34;&gt;Description &lt;/span&gt;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;&amp;#160;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;Documentation details regarding this UML Example can be found in the Documentation at &lt;a href=&#34;https://doc.scheer-pas.com/display/BRIDGE&#34;&gt;doc.scheer-pas.com&lt;/a&gt;.&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;&amp;#160;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;xUML Reference Guide - xUML Adapters - &lt;a href=&#34;https://doc.scheer-pas.com/display/BRIDGE/URL+Adapter&#34;&gt;URL Adapter&lt;/a&gt;&#xA;&#xA;    &lt;/p&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;"/>
+      <ownedMember name="Aliases"
+                   xmi:id="_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases"
+                   xmi:type="uml:Package">
+         <ownedMember name="fileURLAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"
+                          method="read"
+                          protocol="file"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359106070171_239744_13537"/>
+         </ownedMember>
+         <ownedMember name="postFileAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"
+                          method="write"
+                          path="./tmp/new_address.xml"
+                          protocol="file"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359106070181_914147_13545"/>
+         </ownedMember>
+         <ownedMember name="writeFileURLAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"
+                          method="write"
+                          protocol="file"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359106070196_253125_13556"/>
+         </ownedMember>
+         <ownedMember name="postURLAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"
+                          host="yourHTTPServer"
+                          method="post"
+                          path="./tmp/postresult.htm"
+                          protocol="http"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359106070206_936126_13564"/>
+         </ownedMember>
+         <ownedMember name="getURLAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"
+                          host="doc.scheer-pas.com"
+                          path="/display/BRIDGE/Bridging+in+a+Nutshell"
+                          protocol="https"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359107175409_752872_13849"/>
+         </ownedMember>
+         <ownedMember name="getXMLURLAlias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"
+                          host="doc.scheer-pas.com"
+                          path="/download/attachments/2286600/address.xml"
+                          protocol="https"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359107236970_850409_13874"/>
+         </ownedMember>
+         <ownedMember name="getXMLURL2Alias"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"
+                          host="doc.scheer-pas.com"
+                          path="/download/attachments/2286600/address2.xml"
+                          protocol="https"
+                          xmi:id="_670312791|_17_0_6_b6602e5_1359107279100_617757_13899"/>
+         </ownedMember>
+         <ownedMember name="URLAlias" xmi:id="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"
+                          host="192.168.1.9 "
+                          method="get"
+                          path="/"
+                          port="22"
+                          protocol="sftp"
+                          user="tester/password"
+                          xmi:id="_670312791|_18_0_6_30ce0604_1755191599654_873337_14005"/>
+         </ownedMember>
+      </ownedMember>
+      <ownedMember name="Services"
+                   xmi:id="_670312791|PA_http://www.e2e.ch/bridge/template/packagesService_Implementation"
+                   xmi:type="uml:Package">
+         <ownedMember name="URLService" xmi:id="_670312791|mrassinger_1067028535117_997921_160"
+                      xmi:type="uml:Package">
+            <ownedMember name="Classes" xmi:id="_670312791|mrassinger_1058271853226_331148_12"
+                         xmi:type="uml:Package">
+               <ownedMember xmi:id="_670312791|_679022a_1108535678024_499407_668"
+                            xmi:type="uml:Association">
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535678024_527562_666"/>
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535678024_546600_667"/>
+                  <ownedEnd association="_670312791|_679022a_1108535678024_499407_668"
+                            type="_670312791|mrassinger_1058271910358_598512_13"
+                            visibility="private"
+                            xmi:id="_670312791|_679022a_1108535678024_527562_666"
+                            xmi:type="uml:Property"/>
+               </ownedMember>
+               <ownedMember name="PostInput" xmi:id="_670312791|_f0a0347_1081859131883_919420_301"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.Classes"/>
+                  <ownedAttribute name="lastname"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1082452101912_766472_241"
+                                  xmi:type="uml:Property">
+                     <defaultValue value="&amp;lastname=Twist"
+                                   xmi:id="_670312791|_12_0_1763043c_1170873860133_495772_719"
+                                   xmi:type="uml:LiteralString"/>
+                  </ownedAttribute>
+                  <ownedAttribute name="firstname"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1082452101912_22239_242"
+                                  xmi:type="uml:Property">
+                     <defaultValue value="&amp;firstname=Oliver"
+                                   xmi:id="_670312791|_12_0_1763043c_1170873860149_680697_720"
+                                   xmi:type="uml:LiteralString"/>
+                  </ownedAttribute>
+               </ownedMember>
+               <ownedMember name="StreetElement" xmi:id="_670312791|_f0a0347_1093521362745_144804_526"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.Classes"/>
+                  <ebp:XML base_Class="_670312791|_f0a0347_1093521362745_144804_526" isMixed="true"
+                           xmi:id="_670312791|_18_0_6_18bd040f_1568890097759_812907_14387"/>
+                  <ownedAttribute name="id"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093521559221_403916_636"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="text_value"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093521559221_423742_637"
+                                  xmi:type="uml:Property">
+                     <ebp:XMLCharacters base_Property="_670312791|_f0a0347_1093521559221_423742_637"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864446_15652_975"/>
+                  </ownedAttribute>
+               </ownedMember>
+               <ownedMember name="Address2Example1" xmi:id="_670312791|_f0a0347_1093521317530_914831_446"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.Classes"/>
+                  <ownedAttribute name="id"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093521317530_584228_445"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute association="_670312791|_f0a0347_1093521389884_311531_560" name="street"
+                                  type="_670312791|_f0a0347_1093521362745_144804_526"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093521389884_977986_559"
+                                  xmi:type="uml:Property">
+                     <lowerValue xmi:id="_670312791|_12_0_1763043c_1170873860149_704211_721"
+                                 xmi:type="uml:LiteralInteger"/>
+                     <upperValue value="1" xmi:id="_670312791|_12_0_1763043c_1170873860149_103159_722"
+                                 xmi:type="uml:LiteralInteger"/>
+                  </ownedAttribute>
+                  <ownedAttribute association="_670312791|_679022a_1108535802492_974887_911" name="city"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_679022a_1108535802492_15618_910"
+                                  xmi:type="uml:Property">
+                     <lowerValue xmi:id="_670312791|_12_0_1763043c_1170873860149_564909_723"
+                                 xmi:type="uml:LiteralInteger"/>
+                     <upperValue value="1" xmi:id="_670312791|_12_0_1763043c_1170873860149_366987_724"
+                                 xmi:type="uml:LiteralInteger"/>
+                  </ownedAttribute>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_679022a_1108535802492_974887_911"
+                            xmi:type="uml:Association">
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535802492_329591_909"/>
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535802492_15618_910"/>
+                  <ownedEnd association="_670312791|_679022a_1108535802492_974887_911"
+                            type="_670312791|_f0a0347_1093521317530_914831_446"
+                            visibility="private"
+                            xmi:id="_670312791|_679022a_1108535802492_329591_909"
+                            xmi:type="uml:Property"/>
+               </ownedMember>
+               <ownedMember name="Address2Example2" xmi:id="_670312791|_f0a0347_1093522023816_389050_648"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.Classes"/>
+                  <ownedAttribute name="street" type="_670312791|_f0a0347_1093521362745_144804_526"
+                                  visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093522451181_736243_672"
+                                  xmi:type="uml:Property">
+                     <ebp:XMLElement base_Property="_670312791|_f0a0347_1093522451181_736243_672"
+                                     xmi:id="_670312791|_12_0_1763043c_1170873865149_502043_1041"/>
+                  </ownedAttribute>
+                  <ownedAttribute name="city" visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093522858993_265637_31"
+                                  xmi:type="uml:Property">
+                     <ebp:XMLElement base_Property="_670312791|_f0a0347_1093522858993_265637_31"
+                                     xmi:id="_670312791|_12_0_1763043c_1170873864321_660348_951"/>
+                  </ownedAttribute>
+                  <ownedAttribute association="_670312791|_679022a_1108535875961_779804_1103" name="id"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_679022a_1108535875961_310942_1102"
+                                  xmi:type="uml:Property">
+                     <ebp:XMLAttribute base_Property="_670312791|_679022a_1108535875961_310942_1102"
+                                       xmi:id="_670312791|_12_0_1763043c_1170873865133_133820_1038"/>
+                  </ownedAttribute>
+               </ownedMember>
+               <ownedMember name="Address" xmi:id="_670312791|mrassinger_1058271910358_598512_13"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.Classes"/>
+                  <ownedAttribute name="id"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|mrassinger_1058271952358_250125_14"
+                                  xmi:type="uml:Property">
+                     <defaultValue xmi:id="_670312791|_12_0_1763043c_1170873860133_446517_718"
+                                   xmi:type="uml:LiteralInteger"/>
+                  </ownedAttribute>
+                  <ownedAttribute association="_670312791|_679022a_1108535678024_499407_668" name="street"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_679022a_1108535678024_546600_667"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute association="_670312791|_679022a_1108536221693_474671_1182" name="city"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_679022a_1108536221693_702888_1181"
+                                  xmi:type="uml:Property"/>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_f0a0347_1093521389884_311531_560"
+                            xmi:type="uml:Association">
+                  <memberEnd xmi:idref="_670312791|_f0a0347_1093521389884_290072_558"/>
+                  <memberEnd xmi:idref="_670312791|_f0a0347_1093521389884_977986_559"/>
+                  <ownedEnd association="_670312791|_f0a0347_1093521389884_311531_560"
+                            type="_670312791|_f0a0347_1093521317530_914831_446"
+                            visibility="private"
+                            xmi:id="_670312791|_f0a0347_1093521389884_290072_558"
+                            xmi:type="uml:Property"/>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_679022a_1108536221693_474671_1182"
+                            xmi:type="uml:Association">
+                  <memberEnd xmi:idref="_670312791|_679022a_1108536221693_946300_1180"/>
+                  <memberEnd xmi:idref="_670312791|_679022a_1108536221693_702888_1181"/>
+                  <ownedEnd association="_670312791|_679022a_1108536221693_474671_1182"
+                            type="_670312791|mrassinger_1058271910358_598512_13"
+                            visibility="private"
+                            xmi:id="_670312791|_679022a_1108536221693_946300_1180"
+                            xmi:type="uml:Property"/>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_679022a_1108535875961_779804_1103"
+                            xmi:type="uml:Association">
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535875961_270236_1101"/>
+                  <memberEnd xmi:idref="_670312791|_679022a_1108535875961_310942_1102"/>
+                  <ownedEnd association="_670312791|_679022a_1108535875961_779804_1103"
+                            type="_670312791|_f0a0347_1093522023816_389050_648"
+                            visibility="private"
+                            xmi:id="_670312791|_679022a_1108535875961_270236_1101"
+                            xmi:type="uml:Property"/>
+               </ownedMember>
+            </ownedMember>
+            <ownedMember name="URLPortType" xmi:id="_670312791|mrassinger_1067028572591_512096_161"
+                         xmi:type="uml:Package">
+               <ownedMember name="URLPortType" xmi:id="_670312791|mrassinger_1027693937637_219830_281"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.URLService.URLPortType"/>
+                  <ebp:E2ESOAPPortType base_Class="_670312791|mrassinger_1027693937637_219830_281"
+                                       xmi:id="_670312791|_12_0_1763043c_1170873865008_520645_1022"/>
+                  <ownedBehavior isReentrant="false" name="Dynamic Write File"
+                                 specification="_670312791|_f0a0347_1082472476194_186839_190"
+                                 xmi:id="_670312791|_f0a0347_1082472543944_681234_196"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter name="outputFile"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082472548273_3490_321"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="contentString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082472548257_149172_299"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082475240818_828763_952"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|_f0a0347_1082472548288_15417_357"
+                           target="_670312791|_f0a0347_1082472548226_747257_268"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548226_562030_258"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548210_579281_245"
+                           target="_670312791|_f0a0347_1082472548288_15417_357"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548241_859198_289"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548210_579281_245"
+                           target="_670312791|_f0a0347_1082472548288_506716_345"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548319_92018_381"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548273_3490_321"
+                           target="_670312791|_f0a0347_1082472548210_579281_245"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548319_967293_391"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548288_506716_345"
+                           target="_670312791|_f0a0347_1082472548226_747257_268"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548335_185598_401"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548210_579281_245"
+                           target="_670312791|_f0a0347_1082472548226_747257_268"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548351_399139_411"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548210_906968_230"
+                           target="_670312791|_f0a0347_1082472548210_579281_245"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082473033482_773925_817"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548366_580488_453"
+                           target="_670312791|_f0a0347_1082472548210_906968_230"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082473039107_450063_818"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548257_149172_299"
+                           target="_670312791|_f0a0347_1082472548210_906968_230"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082473618927_231683_847"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548210_906968_230"
+                           target="_670312791|_f0a0347_1082473972963_321814_868"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082473993166_307683_880"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082472548226_747257_268"
+                           target="_670312791|_f0a0347_1082475136670_766435_928"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082475147938_72269_940"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082475136670_766435_928"
+                           target="_670312791|_f0a0347_1082472548304_125267_369"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082475151173_783723_941"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082475136670_766435_928"
+                           target="_670312791|_f0a0347_1082475240818_828763_952"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082475249181_705156_964"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082473972963_321814_868"
+                           target="_670312791|_f0a0347_1082472548226_747257_268"
+                           visibility="public"
+                           xmi:id="_670312791|_12_1_1_f600363_1179838660950_145787_1551"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_670312791|_12_1_1_f600363_1179838660950_650720_1552"
+                                xmi:type="uml:LiteralInteger"/>
+                     </edge>
+                     <edge source="_670312791|_f0a0347_1082472548273_3490_321"
+                           target="_670312791|_17_0_6_b6602e5_1366355947869_996999_13695"
+                           visibility="public"
+                           xmi:id="_670312791|_17_0_6_b6602e5_1366355959516_81314_13700"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_670312791|_17_0_6_b6602e5_1366355959516_520074_13701"
+                                xmi:type="uml:LiteralInteger"/>
+                     </edge>
+                     <node name="Set URL and Method from Alias Definitions" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548210_579281_245"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript alias="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"
+                                          base_Action="_670312791|_f0a0347_1082472548210_579281_245">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="url"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="9" startLine="1">
+                                       <Call id="f_670312791h-1342512420.0_1" start="11" startLine="1">
+                                          <EALName start="11" startLine="1" value="concat"/>
+                                          <ParameterList start="19" startLine="1">
+                                             <Parameter start="19" startLine="1">
+                                                <Call id="f_670312791h-1342512420.1_1" start="19" startLine="1">
+                                                   <EALName start="19" startLine="1" value="getProtocolFromAlias"/>
+                                                </Call>
+                                             </Parameter>
+                                             <Parameter start="43" startLine="1">
+                                                <EALString id="f_670312791h-1342512420.2_1" start="43" startLine="1" value="&#34;://&#34;"/>
+                                             </Parameter>
+                                             <Parameter start="50" startLine="1">
+                                                <Call id="f_670312791h-1342512420.3_1" start="50" startLine="1">
+                                                   <EALName start="50" startLine="1" value="getHostFromAlias"/>
+                                                </Call>
+                                             </Parameter>
+                                             <Parameter start="70" startLine="1">
+                                                <EALString id="f_670312791h-1342512420.4_1" start="70" startLine="1" value="&#34;/&#34;"/>
+                                             </Parameter>
+                                             <Parameter start="75" startLine="1">
+                                                <Accessor start="75" startLine="1">
+                                                   <AccessorPart start="75" startLine="1">
+                                                      <EALName start="75" startLine="1" value="outputFile"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="method"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="12" startLine="2">
+                                       <Call id="f_670312791h-1342512420.5_1" start="14" startLine="2">
+                                          <EALName start="14" startLine="2" value="getMethodFromAlias"/>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548319_967293_391"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082473033482_773925_817"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548241_859198_289"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548319_92018_381"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548351_399139_411"/>
+                     </node>
+                     <node name="Write File" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548226_747257_268"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter base_Action="_670312791|_f0a0347_1082472548226_747257_268"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864930_470337_1008"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548226_562030_258"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548335_185598_401"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548351_399139_411"/>
+                        <incoming xmi:idref="_670312791|_12_1_1_f600363_1179838660950_145787_1551"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082475147938_72269_940"/>
+                     </node>
+                     <node name="outputFile" parameter="_670312791|P__f0a0347_1082472548273_3490_321"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548273_3490_321"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548319_967293_391"/>
+                        <outgoing xmi:idref="_670312791|_17_0_6_b6602e5_1366355959516_81314_13700"/>
+                     </node>
+                     <node name="method"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548288_506716_345"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548319_92018_381"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548335_185598_401"/>
+                     </node>
+                     <node name="url"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548288_15417_357"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082472548241_859198_289"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082472548226_562030_258"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1082472548304_125267_369"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082475151173_783723_941"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1082472548366_580488_453"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082473039107_450063_818"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1082472548257_149172_299"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548257_149172_299"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082473618927_231683_847"/>
+                     </node>
+                     <node name="Transcode Content String to Blob" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082472548210_906968_230"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1082472548210_906968_230">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="content"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="13" startLine="1">
+                                       <Call id="f_670312791h699421289.0_1" start="15" startLine="1">
+                                          <EALName start="15" startLine="1" value="transcodeToBlob"/>
+                                          <ParameterList start="31" startLine="1">
+                                             <Parameter start="31" startLine="1">
+                                                <Accessor start="31" startLine="1">
+                                                   <AccessorPart start="31" startLine="1">
+                                                      <EALName start="31" startLine="1" value="contentString"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="45" startLine="1">
+                                                <EALString id="f_670312791h699421289.1_1" start="45" startLine="1" value="&#34;iso-88591&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082473039107_450063_818"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082473618927_231683_847"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082473033482_773925_817"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082473993166_307683_880"/>
+                     </node>
+                     <node name="content"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082473972963_321814_868"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082473993166_307683_880"/>
+                        <outgoing xmi:idref="_670312791|_12_1_1_f600363_1179838660950_145787_1551"/>
+                     </node>
+                     <node behavior="_670312791|mrassinger_1058888300830_3300_81"
+                           name="Read File Just Written"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082475136670_766435_928"
+                           xmi:type="uml:CallBehaviorAction">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082475147938_72269_940"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082475151173_783723_941"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082475249181_705156_964"/>
+                        <argument name="inputFile"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_670312791|_17_0_6_b6602e5_1366355947869_996999_13695"
+                                  xmi:type="uml:InputPin">
+                           <incoming xmi:idref="_670312791|_17_0_6_b6602e5_1366355959516_81314_13700"/>
+                        </argument>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1082475240818_828763_952"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082475240818_828763_952"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082475249181_705156_964"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Dynamic Read File"
+                                 specification="_670312791|mrassinger_1058888251789_540207_79"
+                                 xmi:id="_670312791|mrassinger_1058888300830_3300_81"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1080914871945_418167_366"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="inputFile"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082467850046_590853_21"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|mrassinger_1058888312827_562330_100"
+                           target="_670312791|mrassinger_1058888312827_719463_86"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058888312847_579885_118"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1080914871945_816570_354"
+                           target="_670312791|_f0a0347_1080914871945_418167_366"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080914871961_199582_378"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058888312827_562330_100"
+                           target="_670312791|_f0a0347_1080914871945_816570_354"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080914876393_525680_388"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1080914871945_816570_354"
+                           target="_670312791|mrassinger_1058888312837_979037_112"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080914880417_673540_389"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1058888312827_719463_86"
+                           target="_670312791|_f0a0347_1080914871945_816570_354"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080915242081_248939_406"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081929788687_569841_203"
+                           target="_670312791|mrassinger_1058888312827_562330_100"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081930122989_489359_265"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081929788656_718543_181"
+                           target="_670312791|mrassinger_1058888312827_562330_100"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081929809376_631232_216"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1081929788656_718543_181"
+                           target="_670312791|_f0a0347_1081929788687_569841_203"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081929788672_850183_193"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058888312847_695584_116"
+                           target="_670312791|_f0a0347_1081929788656_718543_181"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081929803485_700607_215"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082467850046_590853_21"
+                           target="_670312791|_f0a0347_1081929788656_718543_181"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082467919122_214806_55"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081929788656_718543_181"
+                           target="_670312791|_f0a0347_1082468852281_740535_78"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082468874625_7904_100"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082468852281_740535_78"
+                           target="_670312791|mrassinger_1058888312827_562330_100"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082468879203_767726_110"
+                           xmi:type="uml:ObjectFlow"/>
+                     <node name="Read File" visibility="public"
+                           xmi:id="_670312791|mrassinger_1058888312827_562330_100"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter base_Action="_670312791|mrassinger_1058888312827_562330_100"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873865164_734817_1043"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081930122989_489359_265"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081929809376_631232_216"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082468879203_767726_110"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058888312847_579885_118"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080914876393_525680_388"/>
+                     </node>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058888312827_719463_86"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1058888312847_579885_118"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080915242081_248939_406"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1058888312837_979037_112"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1080914880417_673540_389"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1058888312847_695584_116"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081929803485_700607_215"/>
+                     </node>
+                     <node name="Transcode Response Blob to String" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080914871945_816570_354"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1080914871945_816570_354">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="outputString"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="1">
+                                       <Call id="f_670312791h139731748.0_1" start="20" startLine="1">
+                                          <EALName start="20" startLine="1" value="transcodeToString"/>
+                                          <ParameterList start="38" startLine="1">
+                                             <Parameter start="38" startLine="1">
+                                                <Accessor start="38" startLine="1">
+                                                   <AccessorPart start="38" startLine="1">
+                                                      <EALName start="38" startLine="1" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="47" startLine="1">
+                                                <EALString id="f_670312791h139731748.1_1" start="47" startLine="1" value="&#34;iso-88591&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1080914876393_525680_388"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1080915242081_248939_406"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080914871961_199582_378"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080914880417_673540_389"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1080914871945_418167_366"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080914871945_418167_366"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1080914871961_199582_378"/>
+                     </node>
+                     <node name="url"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081929788687_569841_203"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081929788672_850183_193"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081930122989_489359_265"/>
+                     </node>
+                     <node name="Set URL and Method from Alias" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081929788656_718543_181"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript alias="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"
+                                          base_Action="_670312791|_f0a0347_1081929788656_718543_181">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="url"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="9" startLine="1">
+                                       <Call id="f_670312791h1652372066.0_1" start="11" startLine="1">
+                                          <EALName start="11" startLine="1" value="concat"/>
+                                          <ParameterList start="19" startLine="1">
+                                             <Parameter start="19" startLine="1">
+                                                <Call id="f_670312791h1652372066.1_1" start="19" startLine="1">
+                                                   <EALName start="19" startLine="1" value="getProtocolFromAlias"/>
+                                                </Call>
+                                             </Parameter>
+                                             <Parameter start="43" startLine="1">
+                                                <EALString id="f_670312791h1652372066.2_1" start="43" startLine="1" value="&#34;://&#34;"/>
+                                             </Parameter>
+                                             <Parameter start="50" startLine="1">
+                                                <Call id="f_670312791h1652372066.3_1" start="50" startLine="1">
+                                                   <EALName start="50" startLine="1" value="getHostFromAlias"/>
+                                                </Call>
+                                             </Parameter>
+                                             <Parameter start="70" startLine="1">
+                                                <EALString id="f_670312791h1652372066.4_1" start="70" startLine="1" value="&#34;/&#34;"/>
+                                             </Parameter>
+                                             <Parameter start="75" startLine="1">
+                                                <Accessor start="75" startLine="1">
+                                                   <AccessorPart start="75" startLine="1">
+                                                      <EALName start="75" startLine="1" value="inputFile"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="method"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="12" startLine="2">
+                                       <Call id="f_670312791h1652372066.5_1" start="14" startLine="2">
+                                          <EALName start="14" startLine="2" value="getMethodFromAlias"/>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081929803485_700607_215"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082467919122_214806_55"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081929809376_631232_216"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081929788672_850183_193"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082468874625_7904_100"/>
+                     </node>
+                     <node name="inputFile" parameter="_670312791|P__f0a0347_1082467850046_590853_21"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082467850046_590853_21"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082467919122_214806_55"/>
+                     </node>
+                     <node name="method"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082468852281_740535_78"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082468874625_7904_100"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082468879203_767726_110"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Static Get"
+                                 specification="_670312791|jrombach_1049895539834_476917_100"
+                                 xmi:id="_670312791|jrombach_1049897267169_869541_102"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P_jrombach_1049897310279_706519_134"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|jrombach_1049897310199_104528_112"
+                           target="_670312791|jrombach_1049897310299_904806_148"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899314035_308843_56"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|jrombach_1049897310299_904806_148"
+                           target="_670312791|_f0a0347_1080899267099_568672_34"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899320051_206132_57"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1080899267099_568672_34"
+                           target="_670312791|jrombach_1049897310229_56148_116"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899322191_575428_58"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1080899267099_568672_34"
+                           target="_670312791|jrombach_1049897310279_706519_134"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899336535_814764_59"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|jrombach_1049897310299_904806_148"
+                           target="_670312791|_f0a0347_1080899344191_61053_60"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899372908_535743_72"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1080899344191_61053_60"
+                           target="_670312791|_f0a0347_1080899267099_568672_34"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899385174_211204_82"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_16_9_24400562_1337144333428_720170_11478"
+                           target="_670312791|_f0a0347_1080899267099_568672_34"
+                           visibility="public"
+                           xmi:id="_670312791|_16_9_24400562_1337144388855_96619_11490"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_670312791|_16_9_24400562_1337144388855_67204_11491"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_670312791|_16_9_24400562_1337144333412_337975_11474"
+                           target="_670312791|_f0a0347_1080899267099_568672_34"
+                           visibility="public"
+                           xmi:id="_670312791|_16_9_24400562_1337144399603_779371_11495"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_670312791|_16_9_24400562_1337144399603_288702_11496"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <node visibility="public" xmi:id="_670312791|jrombach_1049897310199_104528_112"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899314035_308843_56"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|jrombach_1049897310229_56148_116"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899322191_575428_58"/>
+                     </node>
+                     <node name="outputString" parameter="_670312791|P_jrombach_1049897310279_706519_134"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|jrombach_1049897310279_706519_134"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899336535_814764_59"/>
+                     </node>
+                     <node name="Retrieve Page from the WWW" visibility="public"
+                           xmi:id="_670312791|jrombach_1049897310299_904806_148"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"
+                                        base_Action="_670312791|jrombach_1049897310299_904806_148"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864493_271259_980"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899314035_308843_56"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899320051_206132_57"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899372908_535743_72"/>
+                        <result name="httpHeaderParameters"
+                                type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Array"
+                                visibility="public"
+                                xmi:id="_670312791|_16_9_24400562_1337144333412_337975_11474"
+                                xmi:type="uml:OutputPin">
+                           <ebp:E2EArray arrayElement="E2E_BRIDGE_BASE_COMPONENTS|_679022a_1074695100853_302198_27"
+                                         base_ObjectNode="_670312791|_16_9_24400562_1337144333412_337975_11474"
+                                         xmi:id="_670312791|_16_9_24400562_1337144333412_906097_11475"/>
+                           <outgoing xmi:idref="_670312791|_16_9_24400562_1337144399603_779371_11495"/>
+                        </result>
+                        <result name="httpStatus"
+                                type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Integer"
+                                visibility="public"
+                                xmi:id="_670312791|_16_9_24400562_1337144333428_720170_11478"
+                                xmi:type="uml:OutputPin">
+                           <outgoing xmi:idref="_670312791|_16_9_24400562_1337144388855_96619_11490"/>
+                        </result>
+                     </node>
+                     <node name="Convert Response Blob to String, &#xA;Log Header Parameter and Status"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899267099_568672_34"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1080899267099_568672_34">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="outputString"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="1">
+                                       <Call id="f_670312791h159950468.0_1" start="20" startLine="1">
+                                          <EALName start="20" startLine="1" value="transcodeToString"/>
+                                          <ParameterList start="38" startLine="1">
+                                             <Parameter start="38" startLine="1">
+                                                <Accessor start="38" startLine="1">
+                                                   <AccessorPart start="38" startLine="1">
+                                                      <EALName start="38" startLine="1" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="47" startLine="1">
+                                                <EALString id="f_670312791h159950468.1_1" start="47" startLine="1" value="&#34;iso-8859-1&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="3">
+                                 <Call id="f_670312791h159950468.2_1" start="1" startLine="3">
+                                    <EALName start="1" startLine="3" value="log"/>
+                                    <ParameterList start="5" startLine="3">
+                                       <Parameter start="5" startLine="3">
+                                          <EALString id="f_670312791h159950468.3_1" start="5" startLine="3" value="&#34;Info&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="13" startLine="3">
+                                          <EALString id="f_670312791h159950468.4_1" start="13" startLine="3" value="&#34;HTTP&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="21" startLine="3">
+                                          <EALString id="f_670312791h159950468.5_1" start="21" startLine="3" value="&#34;Status&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="31" startLine="3">
+                                          <Call hasTarget="true" id="f_670312791h159950468.6_1">
+                                             <EALName value="convertToString"/>
+                                             <ParameterList>
+                                                <Parameter>
+                                                   <Accessor>
+                                                      <AccessorPart start="31" startLine="3">
+                                                         <EALName start="31" startLine="3" value="httpStatus"/>
+                                                      </AccessorPart>
+                                                   </Accessor>
+                                                </Parameter>
+                                             </ParameterList>
+                                          </Call>
+                                       </Parameter>
+                                    </ParameterList>
+                                 </Call>
+                              </EALStatement>
+                              <EALStatement at="3" start="1" startLine="4">
+                                 <AssignmentStatement isLocal="true" start="1" startLine="4">
+                                    <Set>
+                                       <Accessor>
+                                          <AccessorPart>
+                                             <EALName local="headers" value="headers...528134616"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="15" startLine="4">
+                                       <Apply id="f_670312791h159950468.7_1" start="17" startLine="4">
+                                          <Call hasTarget="true" id="f_670312791h159950468.8_1">
+                                             <EALName value="concat"/>
+                                             <ParameterList>
+                                                <Parameter>
+                                                   <Accessor>
+                                                      <AccessorPart start="23" startLine="4">
+                                                         <EALName start="23" startLine="4" value="element"/>
+                                                      </AccessorPart>
+                                                      <AccessorPart start="31" startLine="4">
+                                                         <EALName start="31" startLine="4" value="name"/>
+                                                      </AccessorPart>
+                                                   </Accessor>
+                                                </Parameter>
+                                                <Parameter start="43" startLine="4">
+                                                   <EALString id="f_670312791h159950468.9_1" start="43" startLine="4" value="': '"/>
+                                                </Parameter>
+                                                <Parameter start="49" startLine="4">
+                                                   <Accessor start="49" startLine="4">
+                                                      <AccessorPart start="49" startLine="4">
+                                                         <EALName start="49" startLine="4" value="element"/>
+                                                      </AccessorPart>
+                                                      <AccessorPart start="57" startLine="4">
+                                                         <EALName start="57" startLine="4" value="value"/>
+                                                      </AccessorPart>
+                                                   </Accessor>
+                                                </Parameter>
+                                             </ParameterList>
+                                          </Call>
+                                          <Accessor start="67" startLine="4">
+                                             <AccessorPart start="67" startLine="4">
+                                                <EALName start="67" startLine="4" value="httpHeaderParameters"/>
+                                             </AccessorPart>
+                                          </Accessor>
+                                       </Apply>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="4" start="1" startLine="5">
+                                 <Call id="f_670312791h159950468.10_1" start="1" startLine="5">
+                                    <EALName start="1" startLine="5" value="log"/>
+                                    <ParameterList start="5" startLine="5">
+                                       <Parameter start="5" startLine="5">
+                                          <EALString id="f_670312791h159950468.11_1" start="5" startLine="5" value="&#34;Info&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="13" startLine="5">
+                                          <EALString id="f_670312791h159950468.12_1" start="13" startLine="5" value="&#34;HTTP&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="21" startLine="5">
+                                          <EALString id="f_670312791h159950468.13_1" start="21" startLine="5" value="&#34;Headers&#34;"/>
+                                       </Parameter>
+                                       <Parameter start="32" startLine="5">
+                                          <Call hasTarget="true" id="f_670312791h159950468.14_1">
+                                             <EALName value="join"/>
+                                             <ParameterList>
+                                                <Parameter>
+                                                   <Accessor>
+                                                      <AccessorPart>
+                                                         <EALName local="headers" value="headers...528134616"/>
+                                                      </AccessorPart>
+                                                   </Accessor>
+                                                </Parameter>
+                                                <Parameter start="45" startLine="5">
+                                                   <EALString id="f_670312791h159950468.15_1" start="45" startLine="5" value="&#34;, &#34;"/>
+                                                </Parameter>
+                                             </ParameterList>
+                                          </Call>
+                                       </Parameter>
+                                    </ParameterList>
+                                 </Call>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899320051_206132_57"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899385174_211204_82"/>
+                        <incoming xmi:idref="_670312791|_16_9_24400562_1337144388855_96619_11490"/>
+                        <incoming xmi:idref="_670312791|_16_9_24400562_1337144399603_779371_11495"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899322191_575428_58"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899336535_814764_59"/>
+                     </node>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1080899344191_61053_60"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1080899372908_535743_72"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1080899385174_211204_82"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Post XML File"
+                                 specification="_670312791|mrassinger_1058271682360_624822_10"
+                                 xmi:id="_670312791|mrassinger_1058272173075_617636_82"
+                                 xmi:type="uml:Activity">
+                     <edge source="_670312791|mrassinger_1058272359423_56589_185"
+                           target="_670312791|mrassinger_1058272702176_899809_272"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272359463_359244_237"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1058272702176_899809_272"
+                           target="_670312791|mrassinger_1058272712862_173361_294"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272732430_712574_306"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058790847988_564618_19"
+                           target="_670312791|mrassinger_1058272359433_768017_187"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272840014_869965_349"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058272702176_899809_272"
+                           target="_670312791|mrassinger_1058790847988_564618_19"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058274883220_281299_277"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1058272712862_173361_294"
+                           target="_670312791|mrassinger_1058790847988_564618_19"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058790895477_915575_42"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058272702176_899809_272"
+                           target="_670312791|_f0a0347_1082536843110_448283_154"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082536966666_601607_166"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082536843110_448283_154"
+                           target="_670312791|mrassinger_1058790847988_564618_19"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082536981084_301272_176"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082537051275_384773_186"
+                           target="_670312791|_f0a0347_1082537051353_784429_199"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537051368_473414_210"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1058790847988_564618_19"
+                           target="_670312791|_f0a0347_1082537051275_384773_186"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537089457_667658_234"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1058272359433_768017_187"
+                           target="_670312791|_f0a0347_1082537051275_384773_186"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537098307_937315_235"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082537051353_784429_199"
+                           target="_670312791|mrassinger_1058272359393_654016_182"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537220429_207367_421"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082537051275_384773_186"
+                           target="_670312791|_f0a0347_1082537267020_852878_442"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537282246_152219_454"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082537267020_852878_442"
+                           target="_670312791|_f0a0347_1082537051353_784429_199"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537295756_17774_464"
+                           xmi:type="uml:ObjectFlow"/>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1058272359393_654016_182"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537220429_207367_421"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1058272359423_56589_185"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|mrassinger_1058272359463_359244_237"/>
+                     </node>
+                     <node name="address" type="_670312791|mrassinger_1058271910358_598512_13"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272359433_768017_187"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1058272840014_869965_349"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537098307_937315_235"/>
+                     </node>
+                     <node name="Create Data" visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272702176_899809_272"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|mrassinger_1058272702176_899809_272">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="street"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="12" startLine="1">
+                                       <EALString id="f_670312791h-1562558937.0_1" start="14" startLine="1"
+                                                  value="&#34;7, Waterfall Av.&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="city"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="10" startLine="2">
+                                       <EALString id="f_670312791h-1562558937.1_1" start="12" startLine="2"
+                                                  value="&#34;San Francisco, CA 94016, USA&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|mrassinger_1058272359463_359244_237"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058272732430_712574_306"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058274883220_281299_277"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082536966666_601607_166"/>
+                     </node>
+                     <node name="street"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058272712862_173361_294"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1058272732430_712574_306"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058790895477_915575_42"/>
+                     </node>
+                     <node name="Associate Street With Address" visibility="public"
+                           xmi:id="_670312791|mrassinger_1058790847988_564618_19"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|mrassinger_1058790847988_564618_19">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h1651258471.0_1" start="1" startLine="1">
+                                    <EALName value="address"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="address"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="13" startLine="2">
+                                             <EALName start="13" startLine="2" value="street"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="20" startLine="2">
+                                       <Accessor start="22" startLine="2">
+                                          <AccessorPart start="22" startLine="2">
+                                             <EALName start="22" startLine="2" value="street"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="3" start="1" startLine="3">
+                                 <AssignmentStatement start="1" startLine="3">
+                                    <Set start="1" startLine="3">
+                                       <Accessor start="5" startLine="3">
+                                          <AccessorPart start="5" startLine="3">
+                                             <EALName start="5" startLine="3" value="address"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="13" startLine="3">
+                                             <EALName start="13" startLine="3" value="city"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="3">
+                                       <Accessor start="20" startLine="3">
+                                          <AccessorPart start="20" startLine="3">
+                                             <EALName start="20" startLine="3" value="city"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|mrassinger_1058274883220_281299_277"/>
+                        <incoming xmi:idref="_670312791|mrassinger_1058790895477_915575_42"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082536981084_301272_176"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058272840014_869965_349"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537089457_667658_234"/>
+                     </node>
+                     <node name="city"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082536843110_448283_154"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082536966666_601607_166"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082536981084_301272_176"/>
+                     </node>
+                     <node name="Serialize Class to XML" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537051275_384773_186"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1082537051275_384773_186">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="content"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="13" startLine="1">
+                                       <Call id="f_670312791h-934772055.0_1" start="15" startLine="1">
+                                          <EALName start="15" startLine="1" value="classToXML"/>
+                                          <ParameterList start="26" startLine="1">
+                                             <Parameter start="26" startLine="1">
+                                                <Accessor start="26" startLine="1">
+                                                   <AccessorPart start="26" startLine="1">
+                                                      <EALName start="26" startLine="1" value="address"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537089457_667658_234"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537098307_937315_235"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537051368_473414_210"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537282246_152219_454"/>
+                     </node>
+                     <node name="POST XML Message" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537051353_784429_199"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"
+                                        base_Action="_670312791|_f0a0347_1082537051353_784429_199"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864414_942873_965"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537051368_473414_210"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537295756_17774_464"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537220429_207367_421"/>
+                     </node>
+                     <node name="content"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082537267020_852878_442"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082537282246_152219_454"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082537295756_17774_464"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Static Post"
+                                 specification="_670312791|mrassinger_1057932454349_64831_3"
+                                 xmi:id="_670312791|mrassinger_1057932622941_953029_9"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1081858748187_162622_196"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|mrassinger_1057932635089_132371_13"
+                           target="_670312791|mrassinger_1057932825012_859662_136"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057932829278_555421_148"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081858748156_187902_174"
+                           target="_670312791|_f0a0347_1081858748187_162622_196"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081858748171_848156_186"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057932635089_132371_13"
+                           target="_670312791|_f0a0347_1081858748156_187902_174"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081858756687_801417_208"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1081858748156_187902_174"
+                           target="_670312791|mrassinger_1057932640096_832627_26"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081858760202_953786_209"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1081859388755_845810_323"
+                           target="_670312791|mrassinger_1057932635089_132371_13"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859396037_799383_335"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1081859388755_845810_323"
+                           target="_670312791|_f0a0347_1081859091791_701035_279"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859494180_485081_376"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081859091791_701035_279"
+                           target="_670312791|mrassinger_1057932635089_132371_13"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859639790_781088_448"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057932825012_859662_136"
+                           target="_670312791|_f0a0347_1081858748156_187902_174"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859683525_955164_478"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860017537_933584_500"
+                           target="_670312791|_f0a0347_1081859388755_845810_323"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860024975_727130_512"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1081859407740_673073_353"
+                           target="_670312791|_f0a0347_1081860017537_933584_500"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860118677_824637_522"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860124692_653024_523"
+                           target="_670312791|_f0a0347_1081859388755_845810_323"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860153114_975204_535"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860017537_933584_500"
+                           target="_670312791|_f0a0347_1081860124692_653024_523"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860159395_820619_545"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860557278_573740_582"
+                           target="_670312791|_f0a0347_1081859407740_673073_353"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860579824_320477_594"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860557278_573740_582"
+                           target="_670312791|_f0a0347_1081860017537_933584_500"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860628245_593044_613"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082448790756_233224_78"
+                           target="_670312791|mrassinger_1057932635089_132371_13"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082448826897_971024_90"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1081860557278_573740_582"
+                           target="_670312791|_f0a0347_1082448790756_233224_78"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082448836725_56495_100"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057932632835_640793_11"
+                           target="_670312791|_f0a0347_1082449507526_585373_130"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082449530589_119252_141"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082449507526_585373_130"
+                           target="_670312791|_f0a0347_1081860557278_573740_582"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082449533964_7862_142"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082449507526_585373_130"
+                           target="_670312791|_f0a0347_1082449537073_73217_152"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082450035217_327409_222"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082449537073_73217_152"
+                           target="_670312791|_f0a0347_1081860557278_573740_582"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082450292422_878324_236"
+                           xmi:type="uml:ObjectFlow"/>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1057932632835_640793_11"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082449530589_119252_141"/>
+                     </node>
+                     <node name="POST Content" visibility="public"
+                           xmi:id="_670312791|mrassinger_1057932635089_132371_13"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"
+                                        base_Action="_670312791|mrassinger_1057932635089_132371_13"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864493_392631_981"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081859396037_799383_335"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081859639790_781088_448"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082448826897_971024_90"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1057932829278_555421_148"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081858756687_801417_208"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1057932640096_832627_26"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081858760202_953786_209"/>
+                     </node>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057932825012_859662_136"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1057932829278_555421_148"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081859683525_955164_478"/>
+                     </node>
+                     <node name="Transcode Response Blob to String" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081858748156_187902_174"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1081858748156_187902_174">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="outputString"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="1">
+                                       <Call id="f_670312791h-835270673.0_1" start="20" startLine="1">
+                                          <EALName start="20" startLine="1" value="transcodeToString"/>
+                                          <ParameterList start="38" startLine="1">
+                                             <Parameter start="38" startLine="1">
+                                                <Accessor start="38" startLine="1">
+                                                   <AccessorPart start="38" startLine="1">
+                                                      <EALName start="38" startLine="1" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="47" startLine="1">
+                                                <EALString id="f_670312791h-835270673.1_1" start="47" startLine="1" value="&#34;iso-88591&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081858756687_801417_208"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081859683525_955164_478"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081858748171_848156_186"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081858760202_953786_209"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1081858748187_162622_196"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081858748187_162622_196"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081858748171_848156_186"/>
+                     </node>
+                     <node name="content"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859091791_701035_279"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081859494180_485081_376"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081859639790_781088_448"/>
+                     </node>
+                     <node name="Transcode to Blob" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859388755_845810_323"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1081859388755_845810_323">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="content"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="13" startLine="1">
+                                       <Call id="f_670312791h801925483.0_1" start="15" startLine="1">
+                                          <EALName start="15" startLine="1" value="transcodeToBlob"/>
+                                          <ParameterList start="32" startLine="1">
+                                             <Parameter start="32" startLine="1">
+                                                <Accessor start="32" startLine="1">
+                                                   <AccessorPart start="32" startLine="1">
+                                                      <EALName start="32" startLine="1" value="postString"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="44" startLine="1">
+                                                <EALString id="f_670312791h801925483.1_1" start="44" startLine="1" value="&#34;ISO-8859-1&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860024975_727130_512"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860153114_975204_535"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081859396037_799383_335"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081859494180_485081_376"/>
+                     </node>
+                     <node name="postParameter" type="_670312791|_f0a0347_1081859131883_919420_301"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081859407740_673073_353"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860579824_320477_594"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860118677_824637_522"/>
+                     </node>
+                     <node name="Store all Parameters to one String" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860017537_933584_500"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1081860017537_933584_500">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="postString"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="16" startLine="1">
+                                       <Call id="f_670312791h-1295668566.0_1" start="18" startLine="1">
+                                          <EALName start="18" startLine="1" value="concat"/>
+                                          <ParameterList start="26" startLine="1">
+                                             <Parameter start="26" startLine="1">
+                                                <Accessor start="26" startLine="1">
+                                                   <AccessorPart start="26" startLine="1">
+                                                      <EALName start="26" startLine="1" value="postParameter"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="40" startLine="1">
+                                                      <EALName start="40" startLine="1" value="firstname"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="50" startLine="1">
+                                                <Accessor start="50" startLine="1">
+                                                   <AccessorPart start="50" startLine="1">
+                                                      <EALName start="50" startLine="1" value="postParameter"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="64" startLine="1">
+                                                      <EALName start="64" startLine="1" value="lastname"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860118677_824637_522"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860628245_593044_613"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860024975_727130_512"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860159395_820619_545"/>
+                     </node>
+                     <node name="postString"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860124692_653024_523"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1081860159395_820619_545"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860153114_975204_535"/>
+                     </node>
+                     <node name="Create POST Parameter" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1081860557278_573740_582"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1081860557278_573740_582">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h-1678806678.0_1" start="1" startLine="1">
+                                    <EALName value="postParameter"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <CreateStatement id="f_670312791h-1678806678.1_1" start="1" startLine="2">
+                                    <EALName value="headerParameters"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="3" start="1" startLine="3">
+                                 <AppendStatement start="1" startLine="3">
+                                    <Append start="1" startLine="3">
+                                       <Accessor start="8" startLine="3">
+                                          <AccessorPart start="8" startLine="3">
+                                             <EALName start="8" startLine="3" value="contentType"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Append>
+                                    <ToTarget start="20" startLine="3">
+                                       <Accessor start="23" startLine="3">
+                                          <AccessorPart start="23" startLine="3">
+                                             <EALName start="23" startLine="3" value="headerParameters"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </ToTarget>
+                                 </AppendStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082449533964_7862_142"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082450292422_878324_236"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860579824_320477_594"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1081860628245_593044_613"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082448836725_56495_100"/>
+                     </node>
+                     <node name="headerParameters"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Array"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082448790756_233224_78"
+                           xmi:type="uml:CentralBufferNode">
+                        <ebp:E2EArray arrayElement="E2E_BRIDGE_BASE_COMPONENTS|_679022a_1074695100853_302198_27"
+                                      base_ObjectNode="_670312791|_f0a0347_1082448790756_233224_78"
+                                      xmi:id="_670312791|_12_0_1763043c_1170873864352_831700_955"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082448836725_56495_100"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082448826897_971024_90"/>
+                     </node>
+                     <node name="Create HTTP Header" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082449507526_585373_130"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1082449507526_585373_130">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h317860335.0_1" start="1" startLine="1">
+                                    <EALName value="contentType"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="contentType"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="17" startLine="2">
+                                             <EALName start="17" startLine="2" value="name"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="21" startLine="2">
+                                       <EALString id="f_670312791h317860335.1_1" start="22" startLine="2" value="&#34;content-type&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="3" start="1" startLine="3">
+                                 <AssignmentStatement start="1" startLine="3">
+                                    <Set start="1" startLine="3">
+                                       <Accessor start="5" startLine="3">
+                                          <AccessorPart start="5" startLine="3">
+                                             <EALName start="5" startLine="3" value="contentType"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="17" startLine="3">
+                                             <EALName start="17" startLine="3" value="value"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="22" startLine="3">
+                                       <EALString id="f_670312791h317860335.2_1" start="23" startLine="3"
+                                                  value="&#34;application/x-www-form-urlencoded&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082449530589_119252_141"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082449533964_7862_142"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082450035217_327409_222"/>
+                     </node>
+                     <node name="contentType"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|_679022a_1074695100853_302198_27"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082449537073_73217_152"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082450035217_327409_222"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082450292422_878324_236"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Get XML"
+                                 specification="_670312791|_f0a0347_1082533133678_515112_303"
+                                 xmi:id="_670312791|_f0a0347_1082531213443_841674_156"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="AddressClass"
+                                     type="_670312791|mrassinger_1058271910358_598512_13"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082531866261_316591_236"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|_f0a0347_1082531216299_667547_158"
+                           target="_670312791|_f0a0347_1082531233478_881951_162"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531594013_574782_173"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082531233478_881951_162"
+                           target="_670312791|_f0a0347_1082531623823_859716_194"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531637427_728587_206"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082531233478_881951_162"
+                           target="_670312791|_f0a0347_1082531599452_657620_183"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531709971_348722_216"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082531623823_859716_194"
+                           target="_670312791|_f0a0347_1082531599452_657620_183"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531858979_728906_226"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082531599452_657620_183"
+                           target="_670312791|_f0a0347_1082531866261_316591_236"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531892727_812300_248"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082531599452_657620_183"
+                           target="_670312791|_f0a0347_1082531220441_759175_160"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531913011_408795_258"
+                           xmi:type="uml:ControlFlow"/>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1082531216299_667547_158"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531594013_574782_173"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1082531220441_759175_160"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531913011_408795_258"/>
+                     </node>
+                     <node name="GET XML page" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531233478_881951_162"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"
+                                        base_Action="_670312791|_f0a0347_1082531233478_881951_162"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864899_263882_1004"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531594013_574782_173"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531637427_728587_206"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531709971_348722_216"/>
+                     </node>
+                     <node name="convert XML to class" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531599452_657620_183"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1082531599452_657620_183">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h-22734780.0_1" start="1" startLine="1">
+                                    <EALName value="AddressClass"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="AddressClass"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="2">
+                                       <Call id="f_670312791h-22734780.1_1" start="20" startLine="2">
+                                          <EALName start="20" startLine="2" value="xmlToClass"/>
+                                          <ParameterList start="32" startLine="2">
+                                             <Parameter start="32" startLine="2">
+                                                <Accessor start="32" startLine="2">
+                                                   <AccessorPart start="32" startLine="2">
+                                                      <EALName start="32" startLine="2" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531709971_348722_216"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531858979_728906_226"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531892727_812300_248"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531913011_408795_258"/>
+                     </node>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531623823_859716_194"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531637427_728587_206"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082531858979_728906_226"/>
+                     </node>
+                     <node name="AddressClass" parameter="_670312791|P__f0a0347_1082531866261_316591_236"
+                           type="_670312791|mrassinger_1058271910358_598512_13"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082531866261_316591_236"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082531892727_812300_248"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Get XML Address2"
+                                 specification="_670312791|_f0a0347_1093520671179_606280_377"
+                                 xmi:id="_670312791|_f0a0347_1093520655226_471017_128"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="address2Example1"
+                                     type="_670312791|_f0a0347_1093521317530_914831_446"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1093520656617_626120_170"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter direction="out" name="address2Example2"
+                                     type="_670312791|_f0a0347_1093522023816_389050_648"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1093523312075_75194_264"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|_f0a0347_1093520656555_541655_131"
+                           target="_670312791|_f0a0347_1093520656586_513172_142"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656617_92584_182"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656664_200428_224"
+                           target="_670312791|_f0a0347_1093520656555_541655_131"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656680_475205_228"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656586_513172_142"
+                           target="_670312791|_f0a0347_1093520656617_626120_170"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656680_171868_238"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656555_541655_131"
+                           target="_670312791|_f0a0347_1093520656648_976038_202"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656680_448_248"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656586_513172_142"
+                           target="_670312791|_f0a0347_1093523274604_115813_232"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093523283886_153781_243"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1093523274604_115813_232"
+                           target="_670312791|_f0a0347_1093520656664_269739_226"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093523299762_532384_254"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1093523274604_115813_232"
+                           target="_670312791|_f0a0347_1093523312075_75194_264"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093523373125_249768_286"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656648_976038_202"
+                           target="_670312791|_f0a0347_1093523274604_115813_232"
+                           visibility="public"
+                           xmi:id="_670312791|_12_1_1_f600363_1179842116571_743400_1389"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1093520656648_976038_202"
+                           target="_670312791|_f0a0347_1093520656586_513172_142"
+                           visibility="public"
+                           xmi:id="_670312791|_12_1_1_f600363_1179842120884_318787_1392"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_670312791|_12_1_1_f600363_1179842120884_694955_1393"
+                                xmi:type="uml:LiteralInteger"/>
+                     </edge>
+                     <node name="GET XML File" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656555_541655_131"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"
+                                        base_Action="_670312791|_f0a0347_1093520656555_541655_131"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873865055_101490_1027"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1093520656680_475205_228"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093520656617_92584_182"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093520656680_448_248"/>
+                     </node>
+                     <node name="Convert XML to Class - Alternative 1" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656586_513172_142"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1093520656586_513172_142">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h-228322622.0_1" start="1" startLine="1">
+                                    <EALName value="address2Example1"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="address2Example1"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="22" startLine="2">
+                                       <Call id="f_670312791h-228322622.1_1" start="24" startLine="2">
+                                          <EALName start="24" startLine="2" value="xmlToClass"/>
+                                          <ParameterList start="36" startLine="2">
+                                             <Parameter start="36" startLine="2">
+                                                <Accessor start="36" startLine="2">
+                                                   <AccessorPart start="36" startLine="2">
+                                                      <EALName start="36" startLine="2" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1093520656617_92584_182"/>
+                        <incoming xmi:idref="_670312791|_12_1_1_f600363_1179842120884_318787_1392"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093520656680_171868_238"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093523283886_153781_243"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1093520656617_626120_170"
+                           type="_670312791|_f0a0347_1093521317530_914831_446"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656617_626120_170"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1093520656680_171868_238"/>
+                     </node>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093520656648_976038_202"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1093520656680_448_248"/>
+                        <outgoing xmi:idref="_670312791|_12_1_1_f600363_1179842116571_743400_1389"/>
+                        <outgoing xmi:idref="_670312791|_12_1_1_f600363_1179842120884_318787_1392"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1093520656664_200428_224"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093520656680_475205_228"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|_f0a0347_1093520656664_269739_226"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1093523299762_532384_254"/>
+                     </node>
+                     <node name="Convert XML to Class - Alternative 2" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093523274604_115813_232"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1093523274604_115813_232">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_670312791h-2098804763.0_1" start="1" startLine="1">
+                                    <EALName value="address2Example2"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="address2Example2"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="22" startLine="2">
+                                       <Call id="f_670312791h-2098804763.1_1" start="24" startLine="2">
+                                          <EALName start="24" startLine="2" value="xmlToClass"/>
+                                          <ParameterList start="36" startLine="2">
+                                             <Parameter start="36" startLine="2">
+                                                <Accessor start="36" startLine="2">
+                                                   <AccessorPart start="36" startLine="2">
+                                                      <EALName start="36" startLine="2" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1093523283886_153781_243"/>
+                        <incoming xmi:idref="_670312791|_12_1_1_f600363_1179842116571_743400_1389"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093523299762_532384_254"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1093523373125_249768_286"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1093523312075_75194_264"
+                           type="_670312791|_f0a0347_1093522023816_389050_648"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1093523312075_75194_264"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1093523373125_249768_286"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="Full Dynamic GET"
+                                 specification="_670312791|mrassinger_1057933247039_265023_272"
+                                 xmi:id="_670312791|mrassinger_1057933282760_477012_274"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|P__f0a0347_1082528725720_466269_1062"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_670312791|mrassinger_1057933326062_286930_322"
+                           target="_670312791|mrassinger_1057933343678_936596_378"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933326082_141915_334"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1057933326042_505614_310"
+                           target="_670312791|mrassinger_1057933326012_152856_280"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933326092_27434_344"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057933343678_936596_378"
+                           target="_670312791|mrassinger_1057933326042_505614_310"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933356446_329954_390"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1057933343678_936596_378"
+                           target="_670312791|mrassinger_1057933332231_406907_366"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933366801_956746_401"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057933332231_406907_366"
+                           target="_670312791|mrassinger_1057933326042_505614_310"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933426196_328284_412"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057933343678_936596_378"
+                           target="_670312791|mrassinger_1058165471912_840458_92"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058165498049_428034_104"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1058165471912_840458_92"
+                           target="_670312791|mrassinger_1057933326042_505614_310"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058165504298_545621_114"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|_f0a0347_1082528725657_517283_1040"
+                           target="_670312791|_f0a0347_1082528725720_466269_1062"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082528725689_854918_1052"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_670312791|mrassinger_1057933326042_505614_310"
+                           target="_670312791|_f0a0347_1082528725657_517283_1040"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082528734282_38396_1074"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|_f0a0347_1082528725657_517283_1040"
+                           target="_670312791|mrassinger_1057933326032_216480_308"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082528737996_857745_1075"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_670312791|mrassinger_1057933326012_152856_280"
+                           target="_670312791|_f0a0347_1082528725657_517283_1040"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082529142516_844786_1116"
+                           xmi:type="uml:ObjectFlow"/>
+                     <node name="response"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933326012_152856_280"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1057933326092_27434_344"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082529142516_844786_1116"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1057933326032_216480_308"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082528737996_857745_1075"/>
+                     </node>
+                     <node name="Post Content and Retrieve Response" visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933326042_505614_310"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"
+                                        base_Action="_670312791|mrassinger_1057933326042_505614_310"
+                                        xmi:id="_670312791|_12_0_1763043c_1170873864368_223852_958"/>
+                        <incoming xmi:idref="_670312791|mrassinger_1057933356446_329954_390"/>
+                        <incoming xmi:idref="_670312791|mrassinger_1057933426196_328284_412"/>
+                        <incoming xmi:idref="_670312791|mrassinger_1058165504298_545621_114"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1057933326092_27434_344"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082528734282_38396_1074"/>
+                     </node>
+                     <node visibility="public" xmi:id="_670312791|mrassinger_1057933326062_286930_322"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_670312791|mrassinger_1057933326082_141915_334"/>
+                     </node>
+                     <node name="url"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933332231_406907_366"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1057933366801_956746_401"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1057933426196_328284_412"/>
+                     </node>
+                     <node name="Set URL and Method" visibility="public"
+                           xmi:id="_670312791|mrassinger_1057933343678_936596_378"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|mrassinger_1057933343678_936596_378">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="url"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="9" startLine="1">
+                                       <EALString id="f_670312791h1310922.0_1" start="11" startLine="1"
+                                                  value="&#34;sftp://tester:password@192.168.1.9:22/REWARDMESSAGE.txt&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="method"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="12" startLine="2">
+                                       <EALString id="f_670312791h1310922.1_1" start="14" startLine="2" value="&#34;GET&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|mrassinger_1057933326082_141915_334"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1057933356446_329954_390"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1057933366801_956746_401"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058165498049_428034_104"/>
+                     </node>
+                     <node name="method"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|mrassinger_1058165471912_840458_92"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_670312791|mrassinger_1058165498049_428034_104"/>
+                        <outgoing xmi:idref="_670312791|mrassinger_1058165504298_545621_114"/>
+                     </node>
+                     <node name="Transcode Response Blob to String" visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082528725657_517283_1040"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_670312791|_f0a0347_1082528725657_517283_1040">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="outputString"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="18" startLine="1">
+                                       <Call id="f_670312791h1672509263.0_1" start="20" startLine="1">
+                                          <EALName start="20" startLine="1" value="transcodeToString"/>
+                                          <ParameterList start="38" startLine="1">
+                                             <Parameter start="38" startLine="1">
+                                                <Accessor start="38" startLine="1">
+                                                   <AccessorPart start="38" startLine="1">
+                                                      <EALName start="38" startLine="1" value="response"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="47" startLine="1">
+                                                <EALString id="f_670312791h1672509263.1_1" start="47" startLine="1" value="&#34;iso-88591&#34;"/>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082528734282_38396_1074"/>
+                        <incoming xmi:idref="_670312791|_f0a0347_1082529142516_844786_1116"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082528725689_854918_1052"/>
+                        <outgoing xmi:idref="_670312791|_f0a0347_1082528737996_857745_1075"/>
+                     </node>
+                     <node parameter="_670312791|P__f0a0347_1082528725720_466269_1062"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_670312791|_f0a0347_1082528725720_466269_1062"
+                           xmi:type="uml:ActivityParameterNode">
+                        <incoming xmi:idref="_670312791|_f0a0347_1082528725689_854918_1052"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedOperation isQuery="true" isStatic="true" name="staticGet" visibility="public"
+                                  xmi:id="_670312791|jrombach_1049895539834_476917_100"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|jrombach_1049897267169_869541_102"/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|jrombach_1049895539834_597944_99"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="staticPost" visibility="public"
+                                  xmi:id="_670312791|mrassinger_1057932454349_64831_3"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|mrassinger_1057932622941_953029_9"/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|mrassinger_1057932454349_507970_2"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="fullDynamicGET" visibility="public"
+                                  xmi:id="_670312791|mrassinger_1057933247039_265023_272"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|mrassinger_1057933282760_477012_274"/>
+                     <ownedComment body="This operation just illustrates how use the URL adapter with a statically given URL."/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|mrassinger_1057933247039_397489_271"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="postXMLFile" visibility="public"
+                                  xmi:id="_670312791|mrassinger_1058271682360_624822_10"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|mrassinger_1058272173075_617636_82"/>
+                     <ownedComment body="This operation just illustrates how use the URL adapter with a statically given URL."/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="dynamicReadFile" visibility="public"
+                                  xmi:id="_670312791|mrassinger_1058888251789_540207_79"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|mrassinger_1058888300830_3300_81"/>
+                     <ownedComment body="This operation just illustrates how use the URL adapter with a dynamic URL."/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|mrassinger_1058888251789_457957_78"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="inputFile"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1082468727405_672561_47"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="dynamicWriteFile" visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1082472476194_186839_190"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|_f0a0347_1082472543944_681234_196"/>
+                     <ownedComment body="This operation just illustrates how use the URL adapter with a dynamic URL."/>
+                     <ownedParameter name="contentString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1082472476194_421032_187"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="outputFile"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1082472476194_624081_188"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter direction="out" name="outputString"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1082475261749_715686_985"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="getXML" visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1082533133678_515112_303"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|_f0a0347_1082531213443_841674_156"/>
+                     <ownedParameter direction="out" name="AddressClass"
+                                     type="_670312791|mrassinger_1058271910358_598512_13"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1082533133678_959908_301"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isQuery="true" isStatic="true" name="getXMLAddress2" visibility="public"
+                                  xmi:id="_670312791|_f0a0347_1093520671179_606280_377"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_670312791|_f0a0347_1093520655226_471017_128"/>
+                     <ownedComment body="This operation illustrates how to read XML data."/>
+                     <ownedParameter direction="out" name="address2Example1"
+                                     type="_670312791|_f0a0347_1093521317530_914831_446"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1093520671179_568797_375"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter direction="out" name="address2Example2"
+                                     type="_670312791|_f0a0347_1093522023816_389050_648"
+                                     visibility="public"
+                                     xmi:id="_670312791|_f0a0347_1093523691725_290474_400"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+               </ownedMember>
+            </ownedMember>
+         </ownedMember>
+      </ownedMember>
+      <ownedMember name="Component View"
+                   xmi:id="_670312791|_17_0_6_b6602e5_1359106070066_725532_13481"
+                   xmi:type="uml:Package">
+         <ownedMember name="Composites"
+                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070101_588810_13506"
+                      xmi:type="uml:Package">
+            <ownedMember name="UrlAdapterExample"
+                         xmi:id="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                         xmi:type="uml:Component">
+               <ebp:E2EConfiguration base_Component="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                                     category="Training2025"
+                                     classToXMLDefaultRootName="Default"
+                                     controlPort="22155"
+                                     killJVMThreadsOnShutdown="true"
+                                     version="7.6.0"
+                                     wsdlPerService="true"
+                                     xmi:id="_670312791|_17_0_6_b6602e5_1359106070101_7877_13508"/>
+               <ownedMember name="URLService"
+                            xmi:id="_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                            xmi:type="uml:Component">
+                  <ebp:E2ESOAPService authenticationMode="None"
+                                      base_Component="_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                                      port="12144"
+                                      xmi:id="_670312791|_17_0_6_b6602e5_1359106070106_842324_13518"/>
+                  <realization realizingClassifier="_670312791|mrassinger_1027693937637_219830_281"
+                               xmi:id="_670312791|_17_0_6_b6602e5_1359106070106_297734_13521"
+                               xmi:type="uml:ComponentRealization">
+                     <client xmi:idref="_670312791|mrassinger_1027693937637_219830_281"/>
+                     <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"/>
+                     <realizingClassifier xmi:idref="_670312791|mrassinger_1027693937637_219830_281"/>
+                  </realization>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359107344200_901276_13907"
+                            xmi:type="uml:Dependency">
+                  <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+                  <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"/>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359107350810_888764_13910"
+                            xmi:type="uml:Dependency">
+                  <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+                  <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"/>
+               </ownedMember>
+               <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359107354180_21071_13913"
+                            xmi:type="uml:Dependency">
+                  <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+                  <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"/>
+               </ownedMember>
+            </ownedMember>
+            <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359106070231_598668_13573"
+                         xmi:type="uml:Dependency">
+               <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+               <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"/>
+            </ownedMember>
+            <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359106070236_461110_13575"
+                         xmi:type="uml:Dependency">
+               <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+               <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"/>
+            </ownedMember>
+            <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359106070236_825404_13577"
+                         xmi:type="uml:Dependency">
+               <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+               <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"/>
+            </ownedMember>
+            <ownedMember xmi:id="_670312791|_17_0_6_b6602e5_1359106070236_659034_13579"
+                         xmi:type="uml:Dependency">
+               <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+               <supplier xmi:idref="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"/>
+            </ownedMember>
+         </ownedMember>
+         <ownedMember xmi:id="_670312791|_18_0_6_30ce0604_1755191649095_176621_14110"
+                      xmi:type="uml:Dependency">
+            <client xmi:idref="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"/>
+            <supplier xmi:idref="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"/>
+         </ownedMember>
+      </ownedMember>
+   </uml:Model>
+</xmi:XMI>

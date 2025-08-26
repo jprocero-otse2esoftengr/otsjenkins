@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="getDirList_2" original="FTPService.FTPServicePort.getDirListURLDynamic"/>
+   <UniqueId id="deleteFile_1" original="FTPService.FTPServicePort.deleteFileDyn2"/>
+   <UniqueId id="deleteFile" original="FTPService.FTPServicePort.deleteFileDyn1"/>
+   <UniqueId id="putFileDyn" original="FTPService.FTPServicePort.putFileDyn"/>
+   <UniqueId id="getFileSta" original="FTPService.FTPServicePort.getFileStatic"/>
+   <UniqueId id="renameFile" original="FTPService.FTPServicePort.renameFileDyn"/>
+   <UniqueId id="moveFileDy" original="FTPService.FTPServicePort.moveFileDyn"/>
+   <UniqueId id="putFileFro" original="FTPService.FTPServicePort.putFileFromStream"/>
+   <UniqueId id="getDirList" original="FTPService.FTPServicePort.getDirListURLMacro"/>
+   <UniqueId id="putFileSta" original="FTPService.FTPServicePort.putFileStatic"/>
+   <UniqueId id="getFileDyn" original="FTPService.FTPServicePort.getFileDyn"/>
+   <UniqueId id="getFileAsS" original="FTPService.FTPServicePort.getFileAsStream"/>
+   <UniqueId id="getDirList_1" original="FTPService.FTPServicePort.getDirList"/>
+</UniqueIds>

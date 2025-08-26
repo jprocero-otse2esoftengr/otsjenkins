@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InspectionList xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Model id="_670312791|ROOT_MODEL_XMI.ID" name="UrlAdapterExample">
+      <Package name="Services">
+         <Package name="URLService">
+            <Package name="URLPortType">
+               <Class name="URLPortType">
+                  <Activity name="Dynamic Write File">
+                     <Action alias="writeFileURLAlias"
+                             id="Set_URL_and_Method_from_Alias_Definitions..._670312791|_f0a0347_1082472548210_579281_245"
+                             name="Set URL and Method from Alias Definitions"
+                             traceName="transformerFlow"/>
+                     <Action id="Write_File..._670312791|_f0a0347_1082472548226_747257_268"
+                             name="Write File"
+                             traceName="URLAdapter"/>
+                     <Action id="Transcode_Content_String_to_Blob..._670312791|_f0a0347_1082472548210_906968_230"
+                             name="Transcode Content String to Blob"
+                             traceName="transformerFlow"/>
+                     <Action id="Read_File_Just_Written..._670312791|_f0a0347_1082475136670_766435_928"
+                             name="Read File Just Written"/>
+                  </Activity>
+                  <Activity name="Dynamic Read File">
+                     <Action id="Read_File..._670312791|mrassinger_1058888312827_562330_100"
+                             name="Read File"
+                             traceName="URLAdapter"/>
+                     <Action id="Transcode_Response_Blob_to_String..._670312791|_f0a0347_1080914871945_816570_354"
+                             name="Transcode Response Blob to String"
+                             traceName="transformerFlow"/>
+                     <Action alias="fileURLAlias"
+                             id="Set_URL_and_Method_from_Alias..._670312791|_f0a0347_1081929788656_718543_181"
+                             name="Set URL and Method from Alias"
+                             traceName="transformerFlow"/>
+                  </Activity>
+                  <Activity name="Static Get">
+                     <Action alias="getURLAlias"
+                             id="Retrieve_Page_from_the_WWW..._670312791|jrombach_1049897310299_904806_148"
+                             name="Retrieve Page from the WWW"
+                             traceName="URLAdapter"/>
+                     <Action id="Convert_Response_Blob_to_String__Log_Header_Parameter_and_Status..._670312791|_f0a0347_1080899267099_568672_34"
+                             name="Convert Response Blob to String, &#xA;Log Header Parameter and Status"
+                             traceName="transformerFlow"/>
+                  </Activity>
+                  <Activity name="Post XML File">
+                     <Action id="Create_Data..._670312791|mrassinger_1058272702176_899809_272"
+                             name="Create Data"
+                             traceName="transformerFlow"/>
+                     <Action id="Associate_Street_With_Address..._670312791|mrassinger_1058790847988_564618_19"
+                             name="Associate Street With Address"
+                             traceName="transformerFlow"/>
+                     <Action id="Serialize_Class_to_XML..._670312791|_f0a0347_1082537051275_384773_186"
+                             name="Serialize Class to XML"
+                             traceName="transformerFlow"/>
+                     <Action alias="postFileAlias"
+                             id="POST_XML_Message..._670312791|_f0a0347_1082537051353_784429_199"
+                             name="POST XML Message"
+                             traceName="URLAdapter"/>
+                  </Activity>
+                  <Activity name="Static Post">
+                     <Action alias="postURLAlias"
+                             id="POST_Content..._670312791|mrassinger_1057932635089_132371_13"
+                             name="POST Content"
+                             traceName="URLAdapter"/>
+                     <Action id="Transcode_Response_Blob_to_String..._670312791|_f0a0347_1081858748156_187902_174"
+                             name="Transcode Response Blob to String"
+                             traceName="transformerFlow"/>
+                     <Action id="Transcode_to_Blob..._670312791|_f0a0347_1081859388755_845810_323"
+                             name="Transcode to Blob"
+                             traceName="transformerFlow"/>
+                     <Action id="Store_all_Parameters_to_one_String..._670312791|_f0a0347_1081860017537_933584_500"
+                             name="Store all Parameters to one String"
+                             traceName="transformerFlow"/>
+                     <Action id="Create_POST_Parameter..._670312791|_f0a0347_1081860557278_573740_582"
+                             name="Create POST Parameter"
+                             traceName="transformerFlow"/>
+                     <Action id="Create_HTTP_Header..._670312791|_f0a0347_1082449507526_585373_130"
+                             name="Create HTTP Header"
+                             traceName="transformerFlow"/>
+                  </Activity>
+                  <Activity name="Get XML">
+                     <Action alias="getXMLURLAlias"
+                             id="GET_XML_page..._670312791|_f0a0347_1082531233478_881951_162"
+                             name="GET XML page"
+                             traceName="URLAdapter"/>
+                     <Action id="convert_XML_to_class..._670312791|_f0a0347_1082531599452_657620_183"
+                             name="convert XML to class"
+                             traceName="transformerFlow"/>
+                  </Activity>
+                  <Activity name="Get XML Address2">
+                     <Action alias="getXMLURL2Alias"
+                             id="GET_XML_File..._670312791|_f0a0347_1093520656555_541655_131"
+                             name="GET XML File"
+                             traceName="URLAdapter"/>
+                     <Action id="Convert_XML_to_Class_-_Alternative_1..._670312791|_f0a0347_1093520656586_513172_142"
+                             name="Convert XML to Class - Alternative 1"
+                             traceName="transformerFlow"/>
+                     <Action id="Convert_XML_to_Class_-_Alternative_2..._670312791|_f0a0347_1093523274604_115813_232"
+                             name="Convert XML to Class - Alternative 2"
+                             traceName="transformerFlow"/>
+                  </Activity>
+                  <Activity name="Full Dynamic GET">
+                     <Action alias="URLAlias"
+                             id="Post_Content_and_Retrieve_Response..._670312791|mrassinger_1057933326042_505614_310"
+                             name="Post Content and Retrieve Response"
+                             traceName="URLAdapter"/>
+                     <Action id="Set_URL_and_Method..._670312791|mrassinger_1057933343678_936596_378"
+                             name="Set URL and Method"
+                             traceName="transformerFlow"/>
+                     <Action id="Transcode_Response_Blob_to_String..._670312791|_f0a0347_1082528725657_517283_1040"
+                             name="Transcode Response Blob to String"
+                             traceName="transformerFlow"/>
+                  </Activity>
+               </Class>
+            </Package>
+         </Package>
+      </Package>
+   </Model>
+   <Model id="E2E_BRIDGE_BASE_COMPONENTS|GEN_1065094250389_956183_167"
+          name="UrlAdapterExample"/>
+</InspectionList>

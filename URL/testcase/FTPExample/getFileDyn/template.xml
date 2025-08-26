@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testcase operation="getFileDyn" porttype="FTPServicePort" service="FTPService">
+   <System>
+      <location>http://localhost:12146/Services/FTPService/FTPServicePort/FTPServicePort</location>
+      <documentStyle>rpc</documentStyle>
+      <soapAction/>
+      <control>http://localhost:22146</control>
+   </System>
+   <Request name="getFileDyn"
+            namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+            prefix="ns4">
+      <Parameter>
+         <getFile namespace="urn:Services.FTPService.Classes" nil="true" prefix="ns3"
+                  type="URLParameter">
+            <user nil="true" type="Base Types.String"/>
+            <path nil="true" type="Base Types.String"/>
+            <password nil="true" type="Base Types.String"/>
+            <port nil="true" type="Base Types.String"/>
+            <host nil="true" type="Base Types.String"/>
+            <method nil="true" type="Base Types.String"/>
+            <fileName nil="true" type="Base Types.String"/>
+         </getFile>
+      </Parameter>
+   </Request>
+</Testcase>

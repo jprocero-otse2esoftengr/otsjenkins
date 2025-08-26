@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="get" namespace="urn:Services.LDAPService.LDAPPort.LDAPPort" prefix="ns0">
+   <Parameter>
+      <cn type="Base Types.String">Posteingang</cn>
+   </Parameter>
+</Request>

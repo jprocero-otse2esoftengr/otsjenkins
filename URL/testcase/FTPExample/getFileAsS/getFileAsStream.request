@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="getFileAsStream"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <streamTarget nil="true" type="Base Types.String"/>
+   </Parameter>
+</Request>

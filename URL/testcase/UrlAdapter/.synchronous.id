@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="staticPost" original="URLService.URLPortType.staticPost"/>
+   <UniqueId id="postXMLFil" original="URLService.URLPortType.postXMLFile"/>
+   <UniqueId id="getXMLAddr" original="URLService.URLPortType.getXMLAddress2"/>
+   <UniqueId id="URLPortTyp" original="URLService.URLPortType.staticGet"/>
+   <UniqueId id="URLPortTyp_1" original="URLService.URLPortType.getXML"/>
+   <UniqueId id="dynamicWri" original="URLService.URLPortType.dynamicWriteFile"/>
+   <UniqueId id="fullDynami" original="URLService.URLPortType.fullDynamicGET"/>
+   <UniqueId id="dynamicRea" original="URLService.URLPortType.dynamicReadFile"/>
+</UniqueIds>

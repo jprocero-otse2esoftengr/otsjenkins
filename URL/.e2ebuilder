@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+   <generic>
+      <author type="java.lang.String">e2e.example.user</author>
+      <name type="java.lang.String">URL</name>
+      <description type="java.lang.String">Add-ons Examples - URL</description>
+      <repository type="java.io.File">repository</repository>
+      <version type="java.lang.String">7.6.0</version>
+      <testcase type="java.io.File">testcase</testcase>
+   </generic>
+   <tracer/>
+   <compiler>
+      <uml type="java.io.File">uml</uml>
+      <optimize.java.script type="java.lang.Boolean">false</optimize.java.script>
+      <trace.state type="java.lang.Integer">2</trace.state>
+   </compiler>
+</project>

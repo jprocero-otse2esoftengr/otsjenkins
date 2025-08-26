@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="getFileStatic"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter/>
+</Request>

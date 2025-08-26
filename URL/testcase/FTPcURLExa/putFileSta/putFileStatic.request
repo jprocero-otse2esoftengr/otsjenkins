@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="putFileStatic"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <data type="Base Types.Blob">VGVzdCBmaWxlIGZvciB1cmxDdXJsIEV4YW1wbGUuCnB1dA==&#xD;
+</data>
+   </Parameter>
+</Request>

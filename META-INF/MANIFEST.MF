@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Gradle-Version: 4.8
+Example-Built-By: kgebert
+Example-Name: Add-ons/URL
+Example-Title: Add-ons/URL
+Example-Shorttitle: URL
+Example-Version: 7.6.0
+Example-Date: Tue Oct 15 13:53:54 CEST 2019
+Vendor: Scheer E2E AG
+Copyright: Copyright © 2001-2019 Scheer E2E AG. All rights reserved.
+

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deployment name="UrlAdapterExample">
+   <Configurations>
+      <Configuration category="Training2025"
+                     classToXMLDefaultRootName="Default"
+                     classifierID="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                     classifierName="UrlAdapterExample"
+                     control="${addOn_Services_Service_xUMLControllerService_Port}"
+                     host="localhost"
+                     id="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                     name="UrlAdapterExample"
+                     umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|_17_0_6_b6602e5_1359106070066_725532_13481~_670312791|_17_0_6_b6602e5_1359106070101_588810_13506~_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                     version="7.6.0">
+         <PersistentStateConfiguration>
+            <Data>
+               <WorkerLimit>${ALIAS_Persistent State_WorkerLimit}</WorkerLimit>
+               <Owner>${ALIAS_Persistent State_Owner}</Owner>
+            </Data>
+            <Substitutions>
+               <Substitute default="2"
+                           friendlyId="AL_PS_WORKERLIMIT"
+                           label="Persistent State: WorkerLimit: "
+                           variableName="ALIAS_Persistent State_WorkerLimit"/>
+               <Substitute default="UrlAdapterExample"
+                           friendlyId="AL_PS_OWNER"
+                           label="Persistent State: Owner: "
+                           variableName="ALIAS_Persistent State_Owner"/>
+            </Substitutions>
+         </PersistentStateConfiguration>
+         <GlobalSAPSettings DefaultConnectionPoolSize="10"
+                            FieldPadding="NEVER"
+                            ServerWorkerThreads="1"/>
+         <CompilerInformation>
+            <BuildTime millis="1756235996103">Wed, Aug 27, 2025, 03:19:56 PST</BuildTime>
+            <Compiler version="7.20.0"/>
+         </CompilerInformation>
+         <Services>
+            <Service authenticationMode="None"
+                     externalURL="http://${wsdl_host_urn:Component_View.Composites.UrlAdapterExample.URLService}:${addOn_SEI_HTTP_Service_URLService_Port}"
+                     id="_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                     instanceName="URLService"
+                     label="URLService:URLService"
+                     name="URLService"
+                     namespace="urn:Component_View.Composites"
+                     package="Component_View.Composites.UrlAdapterExample"
+                     port="${addOn_SEI_HTTP_Service_URLService_Port}"
+                     protocol="http"
+                     stereotype="E2ESOAPService"
+                     umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|_17_0_6_b6602e5_1359106070066_725532_13481~_670312791|_17_0_6_b6602e5_1359106070101_588810_13506~_670312791|_17_0_6_b6602e5_1359106070101_527409_13505~_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                     url="http://NoHostInfo:${addOn_SEI_HTTP_Service_URLService_Port}"
+                     wsdl="true"
+                     wsdlServicePath="/URLService"
+                     wsdlURI="http://${server_hostname}:${addOn_SEI_HTTP_Service_URLService_Port}/URLService?wsdl">
+               <Documentation/>
+               <Ports>
+                  <Port enabledID="addOn_URLService.URLPortType_Enabled"
+                        escapedPath="/URLService/URLPortType"
+                        instanceName="URLPortType"
+                        name="URLPortType"
+                        package="Services.URLService.URLPortType"
+                        path="/URLService/URLPortType"/>
+               </Ports>
+            </Service>
+         </Services>
+         <Substitutions name="substitutions">
+            <Substitute definedElsewhere="true"
+                        target="deploy.xml"
+                        template="deploy.xml"
+                        variableName="addOn_SEI_HTTP_Service_URLService_Port"/>
+            <Substitute definedElsewhere="true"
+                        target="deploy.xml"
+                        template="deploy.xml"
+                        variableName="addOn_Services_Service_xUMLControllerService_Port"/>
+         </Substitutions>
+         <Aliases>
+            <Alias name="getURLAlias"
+                   path="/display/BRIDGE/Bridging+in+a+Nutshell"
+                   type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"
+                                        name="getURLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359107171889_775879_13832"
+                         name="getURLAlias"
+                         stereotype="URL"/>
+               <Location host="doc.scheer-pas.com"
+                         method="GET"
+                         path="/display/BRIDGE/Bridging+in+a+Nutshell"
+                         port=""
+                         protocol="https"
+                         url="https://doc.scheer-pas.com/display/BRIDGE/Bridging+in+a+Nutshell"/>
+               <Data>
+                  <URL>${ALIAS_getURLAlias_URL}</URL>
+                  <Method>${ALIAS_getURLAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="https://doc.scheer-pas.com/display/BRIDGE/Bridging+in+a+Nutshell"
+                              friendlyId="AL_GETURLALIAS_URL"
+                              label="getURLAlias: URL: "
+                              variableName="ALIAS_getURLAlias_URL"/>
+                  <Substitute default="GET"
+                              friendlyId="AL_GETURLALIAS_METHOD"
+                              label="getURLAlias: Method: "
+                              variableName="ALIAS_getURLAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_getURLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_getURLAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_getURLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_getURLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_getURLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_getURLAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_getURLAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="getXMLURLAlias"
+                   path="/download/attachments/2286600/address.xml"
+                   type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"
+                                        name="getXMLURLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359107232705_351453_13857"
+                         name="getXMLURLAlias"
+                         stereotype="URL"/>
+               <Location host="doc.scheer-pas.com"
+                         method="GET"
+                         path="/download/attachments/2286600/address.xml"
+                         port=""
+                         protocol="https"
+                         url="https://doc.scheer-pas.com/download/attachments/2286600/address.xml"/>
+               <Data>
+                  <URL>${ALIAS_getXMLURLAlias_URL}</URL>
+                  <Method>${ALIAS_getXMLURLAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="https://doc.scheer-pas.com/download/attachments/2286600/address.xml"
+                              friendlyId="AL_GETXMLURLALIAS_URL"
+                              label="getXMLURLAlias: URL: "
+                              variableName="ALIAS_getXMLURLAlias_URL"/>
+                  <Substitute default="GET"
+                              friendlyId="AL_GETXMLURLALIAS_METHOD"
+                              label="getXMLURLAlias: Method: "
+                              variableName="ALIAS_getXMLURLAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_getXMLURLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_getXMLURLAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_getXMLURLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_getXMLURLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_getXMLURLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_getXMLURLAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_getXMLURLAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="getXMLURL2Alias"
+                   path="/download/attachments/2286600/address2.xml"
+                   type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"
+                                        name="getXMLURL2Alias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359107276320_596529_13882"
+                         name="getXMLURL2Alias"
+                         stereotype="URL"/>
+               <Location host="doc.scheer-pas.com"
+                         method="GET"
+                         path="/download/attachments/2286600/address2.xml"
+                         port=""
+                         protocol="https"
+                         url="https://doc.scheer-pas.com/download/attachments/2286600/address2.xml"/>
+               <Data>
+                  <URL>${ALIAS_getXMLURL2Alias_URL}</URL>
+                  <Method>${ALIAS_getXMLURL2Alias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="https://doc.scheer-pas.com/download/attachments/2286600/address2.xml"
+                              friendlyId="AL_GETXMLURL2ALIAS_URL"
+                              label="getXMLURL2Alias: URL: "
+                              variableName="ALIAS_getXMLURL2Alias_URL"/>
+                  <Substitute default="GET"
+                              friendlyId="AL_GETXMLURL2ALIAS_METHOD"
+                              label="getXMLURL2Alias: Method: "
+                              variableName="ALIAS_getXMLURL2Alias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_getXMLURL2Alias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_getXMLURL2Alias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_getXMLURL2Alias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_getXMLURL2Alias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_getXMLURL2Alias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_getXMLURL2Alias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_getXMLURL2Alias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="fileURLAlias" path="" type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"
+                                        name="fileURLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359106070166_770977_13536"
+                         name="fileURLAlias"
+                         stereotype="URL"/>
+               <Location host="localhost"
+                         method="GET"
+                         path=""
+                         port=""
+                         protocol="file"
+                         url="file:///"/>
+               <Data>
+                  <URL>${ALIAS_fileURLAlias_URL}</URL>
+                  <Method>${ALIAS_fileURLAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="file:///"
+                              friendlyId="AL_FILEURLALIAS_URL"
+                              label="fileURLAlias: URL: "
+                              variableName="ALIAS_fileURLAlias_URL"/>
+                  <Substitute default="GET"
+                              friendlyId="AL_FILEURLALIAS_METHOD"
+                              label="fileURLAlias: Method: "
+                              variableName="ALIAS_fileURLAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_fileURLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_fileURLAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_fileURLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_fileURLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_fileURLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_fileURLAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_fileURLAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="postFileAlias" path="./tmp/new_address.xml" type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"
+                                        name="postFileAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359106070181_938423_13544"
+                         name="postFileAlias"
+                         stereotype="URL"/>
+               <Location host="localhost"
+                         method="POST"
+                         path="./tmp/new_address.xml"
+                         port=""
+                         protocol="file"
+                         url="file:///./tmp/new_address.xml"/>
+               <Data>
+                  <URL>${ALIAS_postFileAlias_URL}</URL>
+                  <Method>${ALIAS_postFileAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="file:///./tmp/new_address.xml"
+                              friendlyId="AL_POSTFILEALIAS_URL"
+                              label="postFileAlias: URL: "
+                              variableName="ALIAS_postFileAlias_URL"/>
+                  <Substitute default="POST"
+                              friendlyId="AL_POSTFILEALIAS_METHOD"
+                              label="postFileAlias: Method: "
+                              variableName="ALIAS_postFileAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_postFileAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_postFileAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_postFileAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_postFileAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_postFileAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_postFileAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_postFileAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="writeFileURLAlias" path="" type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"
+                                        name="writeFileURLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359106070191_156217_13555"
+                         name="writeFileURLAlias"
+                         stereotype="URL"/>
+               <Location host="localhost"
+                         method="POST"
+                         path=""
+                         port=""
+                         protocol="file"
+                         url="file:///"/>
+               <Data>
+                  <URL>${ALIAS_writeFileURLAlias_URL}</URL>
+                  <Method>${ALIAS_writeFileURLAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="file:///"
+                              friendlyId="AL_WRITEFILEURLALIAS_URL"
+                              label="writeFileURLAlias: URL: "
+                              variableName="ALIAS_writeFileURLAlias_URL"/>
+                  <Substitute default="POST"
+                              friendlyId="AL_WRITEFILEURLALIAS_METHOD"
+                              label="writeFileURLAlias: Method: "
+                              variableName="ALIAS_writeFileURLAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method"
+                            type="string"
+                            value="${ALIAS_writeFileURLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_writeFileURLAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_writeFileURLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_writeFileURLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_writeFileURLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_writeFileURLAlias_URL}"/>
+                     <Property name="method"
+                               type="string"
+                               value="${ALIAS_writeFileURLAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="postURLAlias" path="./tmp/postresult.htm" type="URL">
+               <DeployedServiceArtifact id="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"
+                                        name="postURLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"/>
+               <Resource id="_670312791|_17_0_6_b6602e5_1359106070206_28403_13563"
+                         name="postURLAlias"
+                         stereotype="URL"/>
+               <Location host="yourHTTPServer"
+                         method="POST"
+                         path="./tmp/postresult.htm"
+                         port=""
+                         protocol="http"
+                         url="http://yourHTTPServer/./tmp/postresult.htm"/>
+               <Data>
+                  <URL>${ALIAS_postURLAlias_URL}</URL>
+                  <Method>${ALIAS_postURLAlias_Method}</Method>
+               </Data>
+               <Substitutions>
+                  <Substitute default="http://yourHTTPServer/./tmp/postresult.htm"
+                              friendlyId="AL_POSTURLALIAS_URL"
+                              label="postURLAlias: URL: "
+                              variableName="ALIAS_postURLAlias_URL"/>
+                  <Substitute default="POST"
+                              friendlyId="AL_POSTURLALIAS_METHOD"
+                              label="postURLAlias: Method: "
+                              variableName="ALIAS_postURLAlias_Method"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_postURLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_postURLAlias_URL}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_postURLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_postURLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_postURLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_postURLAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_postURLAlias_Method}"/>
+                  </Property>
+               </Definition>
+            </Alias>
+            <Alias name="URLAlias" path="/" type="URL">
+               <DeployedServiceArtifact id="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"
+                                        name="URLAlias"
+                                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|PA_http://www.e2e.ch/bridge/template/packagesAliases~_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"/>
+               <Resource id="_670312791|_18_0_6_30ce0604_1755191599640_424895_14004"
+                         name="URLAlias"
+                         stereotype="URL"/>
+               <Location host="192.168.1.9"
+                         method="GET"
+                         path="/"
+                         port="22"
+                         protocol="sftp"
+                         url="sftp://192.168.1.9:22/"/>
+               <Data>
+                  <URL>${ALIAS_URLAlias_URL}</URL>
+                  <Method>${ALIAS_URLAlias_Method}</Method>
+                  <Authentication>
+                     <Username>${ALIAS_URLAlias_Authentication_Username}</Username>
+                     <Password>${ALIAS_URLAlias_Authentication_Password}</Password>
+                  </Authentication>
+               </Data>
+               <Substitutions>
+                  <Substitute default="sftp://192.168.1.9:22/"
+                              friendlyId="AL_URLALIAS_URL"
+                              label="URLAlias: URL: "
+                              variableName="ALIAS_URLAlias_URL"/>
+                  <Substitute default="GET"
+                              friendlyId="AL_URLALIAS_METHOD"
+                              label="URLAlias: Method: "
+                              variableName="ALIAS_URLAlias_Method"/>
+                  <Substitute default="tester"
+                              friendlyId="AL_URLALIAS_USER"
+                              label="URLAlias: Authentication: Username: "
+                              variableName="ALIAS_URLAlias_Authentication_Username"/>
+                  <Substitute default="password"
+                              friendlyId="AL_URLALIAS_PWD"
+                              label="URLAlias: Authentication: Password: "
+                              type="password"
+                              variableName="ALIAS_URLAlias_Authentication_Password"/>
+               </Substitutions>
+               <Definition>
+                  <Property name="method" type="string" value="${ALIAS_URLAlias_Method}"/>
+                  <Property name="protocol"
+                            transformation="url.protocol"
+                            type="string"
+                            value="${ALIAS_URLAlias_URL}"/>
+                  <Property name="user"
+                            type="string"
+                            value="${ALIAS_URLAlias_Authentication_Username}/${ALIAS_URLAlias_Authentication_Password}"/>
+                  <Property name="host"
+                            transformation="url.host"
+                            type="string"
+                            value="${ALIAS_URLAlias_URL}"/>
+                  <Property name="port"
+                            transformation="url.port"
+                            type="integer"
+                            value="${ALIAS_URLAlias_URL}"/>
+                  <Property name="path"
+                            transformation="url.tail"
+                            type="string"
+                            value="${ALIAS_URLAlias_URL}"/>
+                  <Property name="digestAlgorithm" type="string" value="None"/>
+                  <Property name="urlMessage" type="urn:Base_Components.Add_Ons.URL.URLMessage">
+                     <Property name="url" type="string" value="${ALIAS_URLAlias_URL}"/>
+                     <Property name="method" type="string" value="${ALIAS_URLAlias_Method}"/>
+                     <Property name="authentication"
+                               type="urn:Base_Components.Add_Ons.URL.Authentication">
+                        <Property name="username"
+                                  type="string"
+                                  value="${ALIAS_URLAlias_Authentication_Username}"/>
+                        <Property name="password"
+                                  type="string"
+                                  value="${ALIAS_URLAlias_Authentication_Password}"/>
+                     </Property>
+                  </Property>
+               </Definition>
+            </Alias>
+         </Aliases>
+      </Configuration>
+   </Configurations>
+   <Libraries/>
+</Deployment>

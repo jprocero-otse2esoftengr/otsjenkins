@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Function>
+      <ID>log...f_670312791h159950468.2_1</ID>
+      <CalledComponentName>ADOP_log...f_670312791h159950468.2_1</CalledComponentName>
+      <CalledComponentType>LOG_LOG</CalledComponentType>
+      <Parameters>value...f_670312791h159950468.3_1;value...f_670312791h159950468.4_1;value...f_670312791h159950468.5_1;convertToString...f_670312791h159950468.6_1</Parameters>
+   </Function>
+   <Function>
+      <ID>log...f_670312791h159950468.10_1</ID>
+      <CalledComponentName>ADOP_log...f_670312791h159950468.10_1</CalledComponentName>
+      <CalledComponentType>LOG_LOG</CalledComponentType>
+      <Parameters>value...f_670312791h159950468.11_1;value...f_670312791h159950468.12_1;value...f_670312791h159950468.13_1;join...f_670312791h159950468.14_1</Parameters>
+   </Function>
+</Functions>

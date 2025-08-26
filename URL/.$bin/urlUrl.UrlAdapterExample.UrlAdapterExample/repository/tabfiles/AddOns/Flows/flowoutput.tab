@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OutputMaps xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.dynamicWriteFile</Component>
+      <Map>om_670312791h2034990149</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.dynamicReadFile</Component>
+      <Map>om_670312791h767087784</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.staticGet</Component>
+      <Map>om_670312791h-1284956577</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.staticPost</Component>
+      <Map>om_670312791h-1178670409</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.getXML</Component>
+      <Map>om_670312791h-1687740438</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.getXMLAddress2</Component>
+      <Map>om_670312791h-811868984</Map>
+   </OutputMap>
+   <OutputMap>
+      <Component>urn:Services.URLService.URLPortType.URLPortType.fullDynamicGET</Component>
+      <Map>om_670312791h1718565007</Map>
+   </OutputMap>
+</OutputMaps>

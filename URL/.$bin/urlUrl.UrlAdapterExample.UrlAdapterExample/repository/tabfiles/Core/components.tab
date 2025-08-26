@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Backend_Components xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.dynamicWriteFile</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">dynamicWriteFile</Operation>
+      <XmiID>_670312791|_f0a0347_1082472543944_681234_196</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.dynamicReadFile</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">dynamicReadFile</Operation>
+      <XmiID>_670312791|mrassinger_1058888300830_3300_81</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.staticGet</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">staticGet</Operation>
+      <XmiID>_670312791|jrombach_1049897267169_869541_102</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.postXMLFile</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">postXMLFile</Operation>
+      <XmiID>_670312791|mrassinger_1058272173075_617636_82</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.staticPost</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">staticPost</Operation>
+      <XmiID>_670312791|mrassinger_1057932622941_953029_9</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.getXML</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">getXML</Operation>
+      <XmiID>_670312791|_f0a0347_1082531213443_841674_156</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.getXMLAddress2</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">getXMLAddress2</Operation>
+      <XmiID>_670312791|_f0a0347_1093520655226_471017_128</XmiID>
+   </Component>
+   <Component>
+      <Name>urn:Services.URLService.URLPortType.URLPortType.fullDynamicGET</Name>
+      <Type>FLOW_GENERIC</Type>
+      <Operation isStatic="true">fullDynamicGET</Operation>
+      <XmiID>_670312791|mrassinger_1057933282760_477012_274</XmiID>
+   </Component>
+   <Component>
+      <Name>Write_File..._670312791|_f0a0347_1082472548226_747257_268</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>Read_File..._670312791|mrassinger_1058888312827_562330_100</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>Retrieve_Page_from_the_WWW..._670312791|jrombach_1049897310299_904806_148</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>POST_XML_Message..._670312791|_f0a0347_1082537051353_784429_199</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>POST_Content..._670312791|mrassinger_1057932635089_132371_13</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>GET_XML_page..._670312791|_f0a0347_1082531233478_881951_162</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>GET_XML_File..._670312791|_f0a0347_1093520656555_541655_131</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>Post_Content_and_Retrieve_Response..._670312791|mrassinger_1057933326042_505614_310</Name>
+      <Type>URL_HANDLE_URL</Type>
+   </Component>
+   <Component>
+      <Name>ADOP_log...f_670312791h159950468.2_1</Name>
+      <Type>LOG_LOG</Type>
+   </Component>
+   <Component>
+      <Name>ADOP_log...f_670312791h159950468.10_1</Name>
+      <Type>LOG_LOG</Type>
+   </Component>
+</Backend_Components>

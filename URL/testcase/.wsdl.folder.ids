@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="LDAPExampl" original="urlLdap.LDAPExample.LDAPExample"/>
+   <UniqueId id="FTPcURLExa" original="urlCurl.FTPcURLExample.FTPcURLExample"/>
+   <UniqueId id="FTPExample" original="urlFtp.FTPExample.FTPExample"/>
+   <UniqueId id="UrlAdapter" original="urlUrl.UrlAdapterExample.UrlAdapterExample"/>
+</UniqueIds>

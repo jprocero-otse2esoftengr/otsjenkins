@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+         xmlns:ebp="http://e2e.ch/bridge/profile"
+         descriptor="yes"
+         enforcedImport="E2E_BRIDGE_BASE_COMPONENTS|_16_9_1763043c_1334833506675_583751_11200 E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_be002f9_1137677887489_628032_1 E2E_BRIDGE_BASE_COMPONENTS|_9_0_2_24400562_1119882133263_554201_141 E2E_BRIDGE_BASE_COMPONENTS|_9_0_2_24400562_1119864426430_621818_2 E2E_BRIDGE_BASE_COMPONENTS|_14_0_1_32690623_1224514979328_116374_4927 E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_be002f9_1135071988137_920600_2 E2E_BRIDGE_BASE_COMPONENTS|_14_0_1_32690623_1227865759515_297406_5256 E2E_BRIDGE_BASE_COMPONENTS|_14_0_b2002db_1195030989033_702066_2836 E2E_BRIDGE_BASE_COMPONENTS|_16_0_1_32690623_1238768448406_311491_4401 E2E_BRIDGE_BASE_COMPONENTS|_12_0_24400562_1172493862659_508204_814 E2E_BRIDGE_BASE_COMPONENTS|_16_9_1c8504c0_1448278243483_527883_14042 E2E_BRIDGE_BASE_COMPONENTS|_16_9_1c8504c0_1448278256610_632842_14047"
+         fileid="_2016291868"
+         xmi:version="2.1"
+         xmifile.id="_2016291868">
+   <xmi:Documentation>
+      <xmi:exporter>MagicDraw UML</xmi:exporter>
+      <xmi:exporterVersion>18.0</xmi:exporterVersion>
+   </xmi:Documentation>
+   <uml:Model xmlns:uml="http://schema.omg.org/spec/UML/2.0" name="Data"
+              xmi:id="_2016291868|ROOT_MODEL_XMI.ID"
+              xmi:type="uml:Model">
+      <ebp:VersionedModel base_Model="_2016291868|ROOT_MODEL_XMI.ID"
+                          cvs="$Header: /CVS/cvsrepository/e2e_bridge/documentation/md_18_0/examples/Add-ons/URL/uml/urlCurl.xml,v 1.1.1.1 2014/05/21 08:08:38 tzimber Exp $"
+                          xmi:id="_2016291868|_16_6_2_24400562_1279790332625_280217_10948"/>
+      <ownedComment body="&lt;html&gt;&#xA;  &lt;head&gt;&#xA;&#x9;&#x9;&lt;style&gt;&#xA;&#x9;&#x9;&#x9;p {padding:0px; margin:0px;}&#xA;&#x9;&#x9;&lt;/style&gt;&#xA;&#x9;&lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;p&gt;&#xA;&lt;span style=&#34;font-size:18.0pt;&#34;&gt;Description &lt;/span&gt;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;&amp;#160;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;Documentation details regarding this UML Example can be found in the E2E Documentation at &lt;a href=&#34;http://docu.e2ebridge.com&#34;&gt;e2ebridge.com&lt;/a&gt;.&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;&amp;#160;&#xA;    &lt;/p&gt;&#xA;&#xA;    &lt;p&gt;&#xA;E2E Bridge Reference Guide - E2E Adapters - &lt;a href=&#34;http://docu.e2ebridge.com/Setting+cURL+Options+on+the+URL+Adapter&#34;&gt;Setting cURL Options on the URL Adapter&lt;/a&gt;&amp;#160;&#xA;&#xA;    &lt;/p&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;"/>
+      <ownedMember name="Aliases"
+                   xmi:id="_2016291868|PA_http://www.e2e.ch/bridge/template/packagesAliases"
+                   xmi:type="uml:Package">
+         <ownedMember name="putFile" xmi:id="_2016291868|_17_0_6_b6602e5_1359103827623_539832_13394"
+                      xmi:type="uml:Artifact">
+            <ebp:URLAlias base_Artifact="_2016291868|_17_0_6_b6602e5_1359103827623_539832_13394"
+                          host="ironman.e2e.ch"
+                          method="put"
+                          options="CURLOPT_CONNECTTIMEOUT=60"
+                          path="intern/uploadedFile.txt"
+                          port="21"
+                          protocol="ftp"
+                          user="administrator/admin"
+                          xmi:id="_2016291868|_17_0_6_b6602e5_1359103827628_119068_13395"/>
+         </ownedMember>
+      </ownedMember>
+      <ownedMember name="Services"
+                   xmi:id="_2016291868|PA_http://www.e2e.ch/bridge/template/packagesService_Implementation"
+                   xmi:type="uml:Package">
+         <ownedMember name="FTPService" xmi:id="_2016291868|PA_FEurn:templateNSNameOfService1"
+                      xmi:type="uml:Package">
+            <ownedMember name="Classes" xmi:id="_2016291868|PA_Classes1Classes" xmi:type="uml:Package">
+               <ownedMember name="URLParameter" xmi:id="_2016291868|_9_5_914028c_1150692638673_716696_102"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.FTPService.Classes"/>
+                  <ownedAttribute name="user"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150692665969_176394_103"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="path"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150692665969_319304_104"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="password"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150692665969_112930_105"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="port"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150692672984_638081_109"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="host"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150692672984_811835_110"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="method"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150701200599_332519_836"
+                                  xmi:type="uml:Property"/>
+                  <ownedAttribute name="fileName"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1150806273286_188669_128"
+                                  xmi:type="uml:Property"/>
+               </ownedMember>
+            </ownedMember>
+            <ownedMember name="FTPServicePort"
+                         xmi:id="_2016291868|PA_urn:templateNSNameOfService1NameOfPort1"
+                         xmi:type="uml:Package">
+               <ownedMember isReentrant="false" name="urlError"
+                            xmi:id="_2016291868|_9_5_914028c_1154361185364_797110_3348"
+                            xmi:type="uml:Activity">
+                  <edge source="_2016291868|_9_5_914028c_1154361212942_459711_3353"
+                        target="_2016291868|_9_5_914028c_1154361212942_49780_3351"
+                        visibility="public"
+                        xmi:id="_2016291868|_9_5_914028c_1154361212942_118805_3350"
+                        xmi:type="uml:ControlFlow"/>
+                  <edge source="_2016291868|_9_5_914028c_1154361212942_459711_3353"
+                        target="_2016291868|_9_5_914028c_1154361212942_622610_3352"
+                        visibility="public"
+                        xmi:id="_2016291868|_9_5_914028c_1154361212942_761839_3354"
+                        xmi:type="uml:ObjectFlow"/>
+                  <edge source="_2016291868|_9_5_914028c_1154361219021_471318_3398"
+                        target="_2016291868|_9_5_914028c_1154361212942_459711_3353"
+                        visibility="public"
+                        xmi:id="_2016291868|_9_5_914028c_1154361224802_170915_3400"
+                        xmi:type="uml:ControlFlow"/>
+                  <node visibility="public" xmi:id="_2016291868|_9_5_914028c_1154361212942_49780_3351"
+                        xmi:type="uml:ActivityFinalNode">
+                     <incoming xmi:idref="_2016291868|_9_5_914028c_1154361212942_118805_3350"/>
+                  </node>
+                  <node name="urlError"
+                        type="E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_be002f9_1137677887489_628032_1"
+                        visibility="public"
+                        xmi:id="_2016291868|_9_5_914028c_1154361212942_622610_3352"
+                        xmi:type="uml:CentralBufferNode">
+                     <incoming xmi:idref="_2016291868|_9_5_914028c_1154361212942_761839_3354"/>
+                  </node>
+                  <node name="create error msg" visibility="public"
+                        xmi:id="_2016291868|_9_5_914028c_1154361212942_459711_3353"
+                        xmi:type="uml:CallBehaviorAction">
+                     <ebp:ActionScript base_Action="_2016291868|_9_5_914028c_1154361212942_459711_3353">
+                        <EALScript>
+                           <EALStatement at="1" start="1" startLine="1">
+                              <CreateStatement id="f_2016291868h2037467089.0_1" start="1" startLine="1">
+                                 <EALName value="urlError"/>
+                              </CreateStatement>
+                           </EALStatement>
+                           <EALStatement at="2" start="1" startLine="2">
+                              <AssignmentStatement start="1" startLine="2">
+                                 <Set start="1" startLine="2">
+                                    <Accessor start="5" startLine="2">
+                                       <AccessorPart start="5" startLine="2">
+                                          <EALName start="5" startLine="2" value="urlError"/>
+                                       </AccessorPart>
+                                    </Accessor>
+                                 </Set>
+                                 <To start="14" startLine="2">
+                                    <Call id="f_2016291868h2037467089.1_1" start="16" startLine="2">
+                                       <EALName start="16" startLine="2" value="getError"/>
+                                    </Call>
+                                 </To>
+                              </AssignmentStatement>
+                           </EALStatement>
+                        </EALScript>
+                     </ebp:ActionScript>
+                     <incoming xmi:idref="_2016291868|_9_5_914028c_1154361224802_170915_3400"/>
+                     <outgoing xmi:idref="_2016291868|_9_5_914028c_1154361212942_118805_3350"/>
+                     <outgoing xmi:idref="_2016291868|_9_5_914028c_1154361212942_761839_3354"/>
+                  </node>
+                  <node visibility="public" xmi:id="_2016291868|_9_5_914028c_1154361219021_471318_3398"
+                        xmi:type="uml:InitialNode">
+                     <outgoing xmi:idref="_2016291868|_9_5_914028c_1154361224802_170915_3400"/>
+                  </node>
+               </ownedMember>
+               <ownedMember name="FTPServicePort" xmi:id="_2016291868|P_FE_urn:templateNS.NameOfPort1"
+                            xmi:type="uml:Class">
+                  <ebp:umlNamespace value="urn:Services.FTPService.FTPServicePort"/>
+                  <ebp:E2ESOAPPortType base_Class="_2016291868|P_FE_urn:templateNS.NameOfPort1"
+                                       xmi:id="_2016291868|_12_5_1_f0a0347_1189177056338_663003_3200"/>
+                  <ownedComment body="[Add documentation here]"/>
+                  <ownedBehavior isReentrant="false" name="putFileStatic"
+                                 specification="_2016291868|_9_5_1_f0a0347_1189152291858_328533_685"
+                                 xmi:id="_2016291868|_9_5_1_f0a0347_1189152322405_779047_689"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter name="data"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                     visibility="public"
+                                     xmi:id="_2016291868|P__9_5_1_f0a0347_1189152662391_783264_1122"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_2016291868|_9_5_1_f0a0347_1189152494296_75860_808"
+                           target="_2016291868|_9_5_1_f0a0347_1189152494296_526703_804"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_1_f0a0347_1189152552047_884523_939"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_2016291868|_9_5_1_f0a0347_1189152494296_192482_805"
+                           target="_2016291868|_9_5_1_f0a0347_1189152494296_75860_808"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_8780274_1277470741309_157925_11577"
+                           xmi:type="uml:ControlFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_8780274_1277470741309_251468_11578"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_9_5_1_f0a0347_1189152662391_783264_1122"
+                           target="_2016291868|_16_6_2_8780274_1277470828283_382097_11587"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_8780274_1277470835237_574518_11591"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_8780274_1277470835237_253653_11592"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <node visibility="public"
+                           xmi:id="_2016291868|_9_5_1_f0a0347_1189152494296_526703_804"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_2016291868|_9_5_1_f0a0347_1189152552047_884523_939"/>
+                     </node>
+                     <node visibility="public"
+                           xmi:id="_2016291868|_9_5_1_f0a0347_1189152494296_192482_805"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_2016291868|_16_6_2_8780274_1277470741309_157925_11577"/>
+                     </node>
+                     <node name="Call FTP" visibility="public"
+                           xmi:id="_2016291868|_9_5_1_f0a0347_1189152494296_75860_808"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter alias="_2016291868|_17_0_6_b6602e5_1359103827623_539832_13394"
+                                        base_Action="_2016291868|_9_5_1_f0a0347_1189152494296_75860_808"
+                                        xmi:id="_2016291868|_12_5_1_f0a0347_1189177056369_724713_3218"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_8780274_1277470741309_157925_11577"/>
+                        <outgoing xmi:idref="_2016291868|_9_5_1_f0a0347_1189152552047_884523_939"/>
+                        <argument name="content"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_16_6_2_8780274_1277470828283_382097_11587"
+                                  xmi:type="uml:InputPin">
+                           <incoming xmi:idref="_2016291868|_16_6_2_8780274_1277470835237_574518_11591"/>
+                        </argument>
+                     </node>
+                     <node name="data" parameter="_2016291868|P__9_5_1_f0a0347_1189152662391_783264_1122"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_1_f0a0347_1189152662391_783264_1122"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_2016291868|_16_6_2_8780274_1277470835237_574518_11591"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedBehavior isReentrant="false" name="putFileDyn"
+                                 specification="_2016291868|_9_5_914028c_1153735376879_191751_158"
+                                 xmi:id="_2016291868|_9_5_914028c_1153735684871_274013_161"
+                                 xmi:type="uml:Activity">
+                     <ownedParameter name="putFile" type="_2016291868|_9_5_914028c_1150692638673_716696_102"
+                                     visibility="public"
+                                     xmi:id="_2016291868|P__9_5_914028c_1153735705901_321336_180"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="data"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                     visibility="public"
+                                     xmi:id="_2016291868|P__9_5_914028c_1153735932368_437749_521"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="timeout"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Integer"
+                                     visibility="public"
+                                     xmi:id="_2016291868|_16_6_2_24400562_1280222043986_550665_11030"
+                                     xmi:type="uml:Parameter"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_388169_189"
+                           target="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_510465_171"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_507775_190"
+                           target="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_710255_172"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           target="_2016291868|_9_5_914028c_1153735705901_388169_189"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_100009_173"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           target="_2016291868|_9_5_914028c_1153735705901_507775_190"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_974960_174"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_321336_180"
+                           target="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_398033_177"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           target="_2016291868|_9_5_914028c_1154339139161_682200_1285"
+                           visibility="public"
+                           xmi:id="_2016291868|_12_5_1_f0a0347_1189178061412_832730_4261"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735932368_437749_521"
+                           target="_2016291868|_16_6_2_8780274_1277470606472_655376_11563"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_8780274_1277470627958_764183_11567"
+                           xmi:type="uml:ObjectFlow"/>
+                     <edge source="_2016291868|_9_5_914028c_1153735932368_840991_519"
+                           target="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_8780274_1277470664413_40188_11572"
+                           xmi:type="uml:ControlFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_8780274_1277470664413_901432_11573"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           target="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220106255_543603_10900"
+                           xmi:type="uml:ControlFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_24400562_1280220106255_24521_10901"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           target="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220106255_930386_10902"
+                           xmi:type="uml:ControlFlow"/>
+                     <edge source="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           target="_2016291868|_16_6_2_24400562_1280220120318_132447_10907"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220120318_540982_10911"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_24400562_1280220120318_740056_10912"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           target="_2016291868|_16_6_2_24400562_1280220234693_580571_10920"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280221686547_161236_10939"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_24400562_1280221686547_811362_10940"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_16_6_2_24400562_1280220120318_132447_10907"
+                           target="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280221763891_810814_10947"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_24400562_1280221763891_602134_10948"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <edge source="_2016291868|_16_6_2_24400562_1280222043986_624417_11031"
+                           target="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280222068065_475458_11045"
+                           xmi:type="uml:ObjectFlow">
+                        <weight value="1" xmi:id="_2016291868|_16_6_2_24400562_1280222068065_173756_11046"
+                                xmi:type="uml:LiteralUnlimitedNatural"/>
+                     </edge>
+                     <node name="ftp putFile" visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:URLAdapter base_Action="_2016291868|_9_5_914028c_1153735705901_67857_176"
+                                        xmi:id="_2016291868|_12_5_1_f0a0347_1189177056369_25605_3208"/>
+                        <incoming xmi:idref="_2016291868|_9_5_914028c_1153735705901_510465_171"/>
+                        <incoming xmi:idref="_2016291868|_9_5_914028c_1153735705901_710255_172"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280220106255_930386_10902"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280221763891_810814_10947"/>
+                        <outgoing xmi:idref="_2016291868|_12_5_1_f0a0347_1189178061412_832730_4261"/>
+                        <argument name="content"
+                                  type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                  visibility="public"
+                                  xmi:id="_2016291868|_16_6_2_8780274_1277470606472_655376_11563"
+                                  xmi:type="uml:InputPin">
+                           <incoming xmi:idref="_2016291868|_16_6_2_8780274_1277470627958_764183_11567"/>
+                        </argument>
+                     </node>
+                     <node name="compose url for writeFile" visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_729044_179"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_2016291868|_9_5_914028c_1153735705901_729044_179">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <AssignmentStatement start="1" startLine="1">
+                                    <Set start="1" startLine="1">
+                                       <Accessor start="5" startLine="1">
+                                          <AccessorPart start="5" startLine="1">
+                                             <EALName start="5" startLine="1" value="url"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="9" startLine="1">
+                                       <Call id="f_2016291868h-5078336.0_1" start="11" startLine="1">
+                                          <EALName start="11" startLine="1" value="concat"/>
+                                          <ParameterList start="18" startLine="1">
+                                             <Parameter start="18" startLine="1">
+                                                <EALString id="f_2016291868h-5078336.1_1" start="18" startLine="1" value="'ftp://'"/>
+                                             </Parameter>
+                                             <Parameter start="28" startLine="1">
+                                                <Accessor start="28" startLine="1">
+                                                   <AccessorPart start="28" startLine="1">
+                                                      <EALName start="28" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="36" startLine="1">
+                                                      <EALName start="36" startLine="1" value="user"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="42" startLine="1">
+                                                <EALString id="f_2016291868h-5078336.2_1" start="42" startLine="1" value="':'"/>
+                                             </Parameter>
+                                             <Parameter start="47" startLine="1">
+                                                <Accessor start="47" startLine="1">
+                                                   <AccessorPart start="47" startLine="1">
+                                                      <EALName start="47" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="55" startLine="1">
+                                                      <EALName start="55" startLine="1" value="password"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="66" startLine="1">
+                                                <EALString id="f_2016291868h-5078336.3_1" start="66" startLine="1" value="'@'"/>
+                                             </Parameter>
+                                             <Parameter start="71" startLine="1">
+                                                <Accessor start="71" startLine="1">
+                                                   <AccessorPart start="71" startLine="1">
+                                                      <EALName start="71" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="79" startLine="1">
+                                                      <EALName start="79" startLine="1" value="host"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="85" startLine="1">
+                                                <EALString id="f_2016291868h-5078336.4_1" start="85" startLine="1" value="':'"/>
+                                             </Parameter>
+                                             <Parameter start="90" startLine="1">
+                                                <Accessor start="90" startLine="1">
+                                                   <AccessorPart start="90" startLine="1">
+                                                      <EALName start="90" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="98" startLine="1">
+                                                      <EALName start="98" startLine="1" value="port"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="103" startLine="1">
+                                                <EALString id="f_2016291868h-5078336.5_1" start="103" startLine="1" value="'/'"/>
+                                             </Parameter>
+                                             <Parameter start="108" startLine="1">
+                                                <Accessor start="108" startLine="1">
+                                                   <AccessorPart start="108" startLine="1">
+                                                      <EALName start="108" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="116" startLine="1">
+                                                      <EALName start="116" startLine="1" value="path"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                             <Parameter start="122" startLine="1">
+                                                <Accessor start="122" startLine="1">
+                                                   <AccessorPart start="122" startLine="1">
+                                                      <EALName start="122" startLine="1" value="putFile"/>
+                                                   </AccessorPart>
+                                                   <AccessorPart start="130" startLine="1">
+                                                      <EALName start="130" startLine="1" value="fileName"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="method"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="12" startLine="2">
+                                       <Accessor start="14" startLine="2">
+                                          <AccessorPart start="14" startLine="2">
+                                             <EALName start="14" startLine="2" value="putFile"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="22" startLine="2">
+                                             <EALName start="22" startLine="2" value="method"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_2016291868|_9_5_914028c_1153735705901_398033_177"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_8780274_1277470664413_40188_11572"/>
+                        <outgoing xmi:idref="_2016291868|_9_5_914028c_1153735705901_100009_173"/>
+                        <outgoing xmi:idref="_2016291868|_9_5_914028c_1153735705901_974960_174"/>
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280220106255_543603_10900"/>
+                     </node>
+                     <node parameter="_2016291868|P__9_5_914028c_1153735705901_321336_180"
+                           type="_2016291868|_9_5_914028c_1150692638673_716696_102"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_321336_180"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_2016291868|_9_5_914028c_1153735705901_398033_177"/>
+                     </node>
+                     <node name="method"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_388169_189"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_2016291868|_9_5_914028c_1153735705901_100009_173"/>
+                        <outgoing xmi:idref="_2016291868|_9_5_914028c_1153735705901_510465_171"/>
+                     </node>
+                     <node name="url"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/String"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735705901_507775_190"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_2016291868|_9_5_914028c_1153735705901_974960_174"/>
+                        <outgoing xmi:idref="_2016291868|_9_5_914028c_1153735705901_710255_172"/>
+                     </node>
+                     <node visibility="public" xmi:id="_2016291868|_9_5_914028c_1153735932368_840991_519"
+                           xmi:type="uml:InitialNode">
+                        <outgoing xmi:idref="_2016291868|_16_6_2_8780274_1277470664413_40188_11572"/>
+                     </node>
+                     <node name="data" parameter="_2016291868|P__9_5_914028c_1153735932368_437749_521"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                           visibility="public"
+                           xmi:id="_2016291868|_9_5_914028c_1153735932368_437749_521"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_2016291868|_16_6_2_8780274_1277470627958_764183_11567"/>
+                     </node>
+                     <node visibility="public" xmi:id="_2016291868|_9_5_914028c_1154339139161_682200_1285"
+                           xmi:type="uml:ActivityFinalNode">
+                        <incoming xmi:idref="_2016291868|_12_5_1_f0a0347_1189178061412_832730_4261"/>
+                     </node>
+                     <node name="set cURLoptions" visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220104068_843407_10890"
+                           xmi:type="uml:CallBehaviorAction">
+                        <ebp:ActionScript base_Action="_2016291868|_16_6_2_24400562_1280220104068_843407_10890">
+                           <EALScript>
+                              <EALStatement at="1" start="1" startLine="1">
+                                 <CreateStatement id="f_2016291868h-1942250742.0_1" start="1" startLine="1">
+                                    <EALName value="cURL"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="2" start="1" startLine="2">
+                                 <AssignmentStatement start="1" startLine="2">
+                                    <Set start="1" startLine="2">
+                                       <Accessor start="5" startLine="2">
+                                          <AccessorPart start="5" startLine="2">
+                                             <EALName start="5" startLine="2" value="cURL"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="10" startLine="2">
+                                             <EALName start="10" startLine="2" value="name"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="15" startLine="2">
+                                       <EALString id="f_2016291868h-1942250742.1_1" start="17" startLine="2"
+                                                  value="&#34;CURLOPT_CONNECTTIMEOUT&#34;"/>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="3" start="1" startLine="3">
+                                 <AssignmentStatement start="1" startLine="3">
+                                    <Set start="1" startLine="3">
+                                       <Accessor start="5" startLine="3">
+                                          <AccessorPart start="5" startLine="3">
+                                             <EALName start="5" startLine="3" value="cURL"/>
+                                          </AccessorPart>
+                                          <AccessorPart start="10" startLine="3">
+                                             <EALName start="10" startLine="3" value="value"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Set>
+                                    <To start="16" startLine="3">
+                                       <Call hasTarget="true" id="f_2016291868h-1942250742.2_1">
+                                          <EALName value="convertToString"/>
+                                          <ParameterList>
+                                             <Parameter>
+                                                <Accessor>
+                                                   <AccessorPart start="18" startLine="3">
+                                                      <EALName start="18" startLine="3" value="timeout"/>
+                                                   </AccessorPart>
+                                                </Accessor>
+                                             </Parameter>
+                                          </ParameterList>
+                                       </Call>
+                                    </To>
+                                 </AssignmentStatement>
+                              </EALStatement>
+                              <EALStatement at="4" start="1" startLine="5">
+                                 <CreateStatement id="f_2016291868h-1942250742.3_1" start="1" startLine="5">
+                                    <EALName value="options"/>
+                                 </CreateStatement>
+                              </EALStatement>
+                              <EALStatement at="5" start="1" startLine="6">
+                                 <AppendStatement start="1" startLine="6">
+                                    <Append start="1" startLine="6">
+                                       <Accessor start="8" startLine="6">
+                                          <AccessorPart start="8" startLine="6">
+                                             <EALName start="8" startLine="6" value="cURL"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </Append>
+                                    <ToTarget start="13" startLine="6">
+                                       <Accessor start="16" startLine="6">
+                                          <AccessorPart start="16" startLine="6">
+                                             <EALName start="16" startLine="6" value="options"/>
+                                          </AccessorPart>
+                                       </Accessor>
+                                    </ToTarget>
+                                 </AppendStatement>
+                              </EALStatement>
+                           </EALScript>
+                        </ebp:ActionScript>
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280220106255_543603_10900"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280222068065_475458_11045"/>
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280220106255_930386_10902"/>
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280220120318_540982_10911"/>
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280221686547_161236_10939"/>
+                     </node>
+                     <node name="options"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Array"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220120318_132447_10907"
+                           xmi:type="uml:CentralBufferNode">
+                        <ebp:E2EArray arrayElement="E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_24400562_1159164092125_957324_28"
+                                      base_ObjectNode="_2016291868|_16_6_2_24400562_1280220120318_132447_10907"
+                                      xmi:id="_2016291868|_16_6_2_24400562_1280220147505_796672_10913"/>
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280220120318_540982_10911"/>
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280221763891_810814_10947"/>
+                     </node>
+                     <node name="cURL"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|_9_5_1_24400562_1159164092125_957324_28"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280220234693_580571_10920"
+                           xmi:type="uml:CentralBufferNode">
+                        <incoming xmi:idref="_2016291868|_16_6_2_24400562_1280221686547_161236_10939"/>
+                     </node>
+                     <node name="timeout"
+                           parameter="_2016291868|_16_6_2_24400562_1280222043986_550665_11030"
+                           type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Integer"
+                           visibility="public"
+                           xmi:id="_2016291868|_16_6_2_24400562_1280222043986_624417_11031"
+                           xmi:type="uml:ActivityParameterNode">
+                        <outgoing xmi:idref="_2016291868|_16_6_2_24400562_1280222068065_475458_11045"/>
+                     </node>
+                  </ownedBehavior>
+                  <ownedOperation isStatic="true" name="putFileDyn" visibility="public"
+                                  xmi:id="_2016291868|_9_5_914028c_1153735376879_191751_158"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_2016291868|_9_5_914028c_1153735684871_274013_161"/>
+                     <ownedComment body="[Add documentation here]"/>
+                     <ownedParameter name="putFile" type="_2016291868|_9_5_914028c_1150692638673_716696_102"
+                                     visibility="public"
+                                     xmi:id="_2016291868|_9_5_914028c_1153735376879_399426_156"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="data"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                     visibility="public"
+                                     xmi:id="_2016291868|_9_5_914028c_1153735376879_178724_155"
+                                     xmi:type="uml:Parameter"/>
+                     <ownedParameter name="timeout"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Integer"
+                                     visibility="public"
+                                     xmi:id="_2016291868|_16_6_2_24400562_1280222043971_792470_11028"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+                  <ownedOperation isStatic="true" name="putFileStatic" visibility="public"
+                                  xmi:id="_2016291868|_9_5_1_f0a0347_1189152291858_328533_685"
+                                  xmi:type="uml:Operation">
+                     <method xmi:idref="_2016291868|_9_5_1_f0a0347_1189152322405_779047_689"/>
+                     <ownedComment body=" This operation sends a file to a FTP server."/>
+                     <ownedParameter name="data"
+                                     type="E2E_BRIDGE_BASE_COMPONENTS|http://www.e2e.ch/bridge/types/Blob"
+                                     visibility="public"
+                                     xmi:id="_2016291868|_9_5_1_f0a0347_1189156165304_487044_1532"
+                                     xmi:type="uml:Parameter"/>
+                  </ownedOperation>
+               </ownedMember>
+            </ownedMember>
+         </ownedMember>
+      </ownedMember>
+      <ownedMember name="Component View"
+                   xmi:id="_2016291868|_17_0_6_b6602e5_1359103827528_468310_13348"
+                   xmi:type="uml:Package">
+         <ownedMember name="Composites"
+                      xmi:id="_2016291868|_17_0_6_b6602e5_1359103827563_372419_13373"
+                      xmi:type="uml:Package">
+            <ownedMember name="FTPcURLExample"
+                         xmi:id="_2016291868|_17_0_6_b6602e5_1359103827563_40115_13372"
+                         xmi:type="uml:Component">
+               <ebp:E2EConfiguration base_Component="_2016291868|_17_0_6_b6602e5_1359103827563_40115_13372"
+                                     category="E2E Examples"
+                                     controlPort="22147"
+                                     killJVMThreadsOnShutdown="true"
+                                     version="7.0.0"
+                                     wsdlPerService="true"
+                                     xmi:id="_2016291868|_17_0_6_b6602e5_1359103827568_365074_13375"/>
+               <ownedMember name="FTPService"
+                            xmi:id="_2016291868|_17_0_6_b6602e5_1359103827568_607249_13382"
+                            xmi:type="uml:Component">
+                  <ebp:E2ESOAPService base_Component="_2016291868|_17_0_6_b6602e5_1359103827568_607249_13382"
+                                      port="12147"
+                                      xmi:id="_2016291868|_17_0_6_b6602e5_1359103827568_407745_13383"/>
+                  <realization realizingClassifier="_2016291868|P_FE_urn:templateNS.NameOfPort1"
+                               xmi:id="_2016291868|_17_0_6_b6602e5_1359103827568_650464_13386"
+                               xmi:type="uml:ComponentRealization">
+                     <client xmi:idref="_2016291868|P_FE_urn:templateNS.NameOfPort1"/>
+                     <supplier xmi:idref="_2016291868|_17_0_6_b6602e5_1359103827568_607249_13382"/>
+                     <realizingClassifier xmi:idref="_2016291868|P_FE_urn:templateNS.NameOfPort1"/>
+                  </realization>
+               </ownedMember>
+            </ownedMember>
+            <ownedMember xmi:id="_2016291868|_17_0_6_b6602e5_1359103827653_417138_13404"
+                         xmi:type="uml:Dependency">
+               <client xmi:idref="_2016291868|_17_0_6_b6602e5_1359103827563_40115_13372"/>
+               <supplier xmi:idref="_2016291868|_17_0_6_b6602e5_1359103827623_539832_13394"/>
+            </ownedMember>
+         </ownedMember>
+      </ownedMember>
+   </uml:Model>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="dynamicWriteFile"
+         namespace="urn:Services.URLService.URLPortType.URLPortType"
+         prefix="ns0">
+   <Parameter>
+      <contentString type="Base Types.String">Hello World! This file was created by the UrlAdapterExample.</contentString>
+      <outputFile type="Base Types.String">.\tmp\urlExample.txt</outputFile>
+   </Parameter>
+</Request>

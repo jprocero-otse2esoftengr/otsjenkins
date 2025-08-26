@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                   xmlns:ns0="urn:Services.URLService.URLPortType.URLPortType"
+                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+		    <ns0:fullDynamicGETResponse>
+			      <outputString namespace="http://www.w3.org/2001/XMLSchema" xsi:type="Base Types.String">RESPONSE0</outputString>
+		    </ns0:fullDynamicGETResponse>
+	  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

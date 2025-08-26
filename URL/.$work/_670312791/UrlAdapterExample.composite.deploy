@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeploymentDescriptor xmlns="http://e2e.ch/bridge" version="3.0">
+   <Documentation indexDocument="urlUrl__670312791.html" location="documentation"/>
+   <RepositoryConfiguration>
+      <RepositoryEntries>
+         <RepositoryEntry path="tabfiles"/>
+         <RepositoryEntry path="wsdl/"/>
+         <RepositoryEntry path="java"/>
+         <RepositoryEntry path="xslt/"/>
+         <RepositoryEntry path="resources"/>
+         <RepositoryEntry path="htdocs/"/>
+         <RepositoryEntry path="documentation/"/>
+         <RepositoryEntry path="swagger/"/>
+      </RepositoryEntries>
+   </RepositoryConfiguration>
+   <RuntimeConstraints/>
+   <BridgeConfiguration category="Training2025"
+                        classToXMLDefaultRootName="Default"
+                        classifierID="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                        classifierName="UrlAdapterExample"
+                        control="${addOn_Services_Service_xUMLControllerService_Port}"
+                        host="localhost"
+                        id="_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                        name="UrlAdapterExample"
+                        trace="true"
+                        umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|_17_0_6_b6602e5_1359106070066_725532_13481~_670312791|_17_0_6_b6602e5_1359106070101_588810_13506~_670312791|_17_0_6_b6602e5_1359106070101_527409_13505"
+                        version="7.6.0">
+      <Services>
+         <Service authenticationMode="None"
+                  externalURL="http://${wsdl_host_urn:Component_View.Composites.UrlAdapterExample.URLService}:${addOn_SEI_HTTP_Service_URLService_Port}"
+                  id="_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                  instanceName="URLService"
+                  label="URLService:URLService"
+                  name="URLService"
+                  namespace="urn:Component_View.Composites"
+                  package="Component_View.Composites.UrlAdapterExample"
+                  port="${addOn_SEI_HTTP_Service_URLService_Port}"
+                  protocol="http"
+                  stereotype="E2ESOAPService"
+                  umlLocation="_670312791|ROOT_MODEL_XMI.ID~_670312791|_17_0_6_b6602e5_1359106070066_725532_13481~_670312791|_17_0_6_b6602e5_1359106070101_588810_13506~_670312791|_17_0_6_b6602e5_1359106070101_527409_13505~_670312791|_17_0_6_b6602e5_1359106070106_599696_13517"
+                  url="http://NoHostInfo:${addOn_SEI_HTTP_Service_URLService_Port}"
+                  wsdl="true"
+                  wsdlServicePath="/URLService"
+                  wsdlURI="http://${server_hostname}:${addOn_SEI_HTTP_Service_URLService_Port}/URLService?wsdl">
+            <Documentation/>
+            <Ports>
+               <Port enabledID="addOn_URLService.URLPortType_Enabled"
+                     escapedPath="/URLService/URLPortType"
+                     instanceName="URLPortType"
+                     name="URLPortType"
+                     package="Services.URLService.URLPortType"
+                     path="/URLService/URLPortType"/>
+            </Ports>
+         </Service>
+      </Services>
+      <UIDeployments/>
+   </BridgeConfiguration>
+   <ProxyConfiguration/>
+</DeploymentDescriptor>

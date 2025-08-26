@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Function>
+      <ID>transcodeToBlob...f_670312791h699421289.0_1</ID>
+      <Source>0</Source>
+      <Codepage>value...f_670312791h699421289.1_1</Codepage>
+   </Function>
+   <Function>
+      <ID>transcodeToString...f_670312791h139731748.0_1</ID>
+      <Source>1</Source>
+      <Codepage>value...f_670312791h139731748.1_1</Codepage>
+   </Function>
+   <Function>
+      <ID>transcodeToString...f_670312791h159950468.0_1</ID>
+      <Source>1</Source>
+      <Codepage>value...f_670312791h159950468.1_1</Codepage>
+   </Function>
+   <Function>
+      <ID>transcodeToString...f_670312791h-835270673.0_1</ID>
+      <Source>0</Source>
+      <Codepage>value...f_670312791h-835270673.1_1</Codepage>
+   </Function>
+   <Function>
+      <ID>transcodeToBlob...f_670312791h801925483.0_1</ID>
+      <Source>4</Source>
+      <Codepage>value...f_670312791h801925483.1_1</Codepage>
+   </Function>
+   <Function>
+      <ID>transcodeToString...f_670312791h1672509263.0_1</ID>
+      <Source>0</Source>
+      <Codepage>value...f_670312791h1672509263.1_1</Codepage>
+   </Function>
+</Functions>

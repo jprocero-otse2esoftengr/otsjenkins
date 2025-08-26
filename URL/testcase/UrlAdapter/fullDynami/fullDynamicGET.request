@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="fullDynamicGET"
+         namespace="urn:Services.URLService.URLPortType.URLPortType"
+         prefix="ns0">
+   <Parameter/>
+</Request>

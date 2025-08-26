@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="deleteFileDyn1"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <deleteFile namespace="urn:Services.FTPService.Classes" prefix="ns1" type="URLParameter">
+         <fileName nil="true" type="Base Types.String"/>
+         <host type="Base Types.String">Enter your own FTP server ...</host>
+         <method type="Base Types.String">list</method>
+         <password nil="true" type="Base Types.String"/>
+         <path type="Base Types.String">directory/</path>
+         <port type="Base Types.String">21</port>
+         <user nil="true" type="Base Types.String"/>
+      </deleteFile>
+   </Parameter>
+</Request>

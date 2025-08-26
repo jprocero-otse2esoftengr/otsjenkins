@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="putFileDyn"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <putFile namespace="urn:Services.FTPService.Classes" prefix="ns1" type="URLParameter">
+         <fileName type="Base Types.String">myNewFile.txt</fileName>
+         <host type="Base Types.String">ironman.e2e.ch</host>
+         <method type="Base Types.String">put</method>
+         <password type="Base Types.String">admin</password>
+         <path type="Base Types.String">intern</path>
+         <port type="Base Types.String">21</port>
+         <user type="Base Types.String">administrator</user>
+      </putFile>
+      <data type="Base Types.Blob">aHR0cDovL3d3dy5lMmUuY2gvcHJvZHVjdC9pbmRleC5odG0KaHR0cHM6Ly9sb2NhbGhvc3Q6ODA4&#xD;
+MC9hZG1pbi9Db25zb2xlL0JyaWRnZVNlcnZlckNvbmZpZ3VyYXRpb25zP25vZGU9bG9jYWxob3N0&#xD;
+Jmdyb3VwPUUyRUV4YW1wbGVzCmZ0cDovL2Z0cC5zb2Z0cm9uaWNzLmNoLwpodHRwOi8vd3d3Lmdv&#xD;
+b2dsZS5jaC9zZWFyY2g/c291cmNlPWlnJmhsPWRlJnJsej0xRzFHR0xRX0RFQ0gyNjUmPSZxPWUy&#xD;
+ZWJyaWRnZSZidG5HPUdvb2dsZS1TdWNoZQpodHRwOi8vd3d3LmJpbmcuY29tL3NlYXJjaD9xPWUy&#xD;
+ZWJyaWRnZSZnbz0mZm9ybT1RQkxIJmZpbHQ9YWxsCmh0dHA6Ly9sb2NhbGhvc3Q6MTIwMjAvSGVs&#xD;
+bG9Xb3JsZEV4YW1wbGU/V1NETA==&#xD;
+</data>
+      <timeout type="Base Types.Integer">10</timeout>
+   </Parameter>
+</Request>

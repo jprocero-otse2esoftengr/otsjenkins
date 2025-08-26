@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testcase operation="search" porttype="LDAPPort" service="LDAPService">
+   <System>
+      <location>http://localhost:11113/Services/LDAPService/LDAPPort/LDAPPort</location>
+      <documentStyle>rpc</documentStyle>
+      <soapAction/>
+      <control>http://localhost:21113</control>
+   </System>
+   <Request name="search" namespace="urn:Services.LDAPService.LDAPPort.LDAPPort"
+            prefix="ns3">
+      <Parameter>
+         <email nil="true" type="Base Types.String"/>
+      </Parameter>
+   </Request>
+</Testcase>

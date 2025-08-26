@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="putFileFromStream"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <streamSource type="Base Types.String">../../resources/templates/txt/urlFile.txt</streamSource>
+   </Parameter>
+</Request>

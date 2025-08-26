@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="dynamicReadFile"
+         namespace="urn:Services.URLService.URLPortType.URLPortType"
+         prefix="ns0">
+   <Parameter>
+      <inputFile type="Base Types.String">./tmp/urlExample.txt</inputFile>
+   </Parameter>
+</Request>

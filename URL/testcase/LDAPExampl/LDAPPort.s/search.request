@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="search" namespace="urn:Services.LDAPService.LDAPPort.LDAPPort"
+         prefix="ns0">
+   <Parameter>
+      <email type="Base Types.String">*Posteingang*</email>
+   </Parameter>
+</Request>

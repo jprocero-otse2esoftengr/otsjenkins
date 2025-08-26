@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:ns0="urn:Services.URLService.URLPortType.URLPortType"
+         xmlns:bridge="http://e2e.ch/bridge"
+         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+         xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+   <env:Header>
+      <bridge:Trace level="None" maxSize="10"/>
+   </env:Header>
+   <env:Body>
+      <ns0:fullDynamicGET/>
+   </env:Body>
+</Request>

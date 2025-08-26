@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="1456640393" name="ftp putFile"
+             original="ftp_putFile..._2016291868|_9_5_914028c_1153735705901_67857_176"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="922148187" name="Call FTP"
+             original="Call_FTP..._2016291868|_9_5_1_f0a0347_1189152494296_75860_808"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+</UniqueIds>

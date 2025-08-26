@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request name="getDirListURLMacro"
+         namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+         prefix="ns0">
+   <Parameter>
+      <urlFromOperation namespace="urn:Services.FTPService.Classes" prefix="ns1"
+                        type="URLFromOperation">
+         <password nil="true" type="Base Types.String"/>
+         <path type="Base Types.String">directory/</path>
+         <user nil="true" type="Base Types.String"/>
+      </urlFromOperation>
+   </Parameter>
+</Request>

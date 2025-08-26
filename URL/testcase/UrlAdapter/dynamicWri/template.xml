@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testcase operation="dynamicWriteFile" porttype="URLPortType" service="URLService">
+   <System>
+      <location>http://localhost:12144/URLService/URLPortType</location>
+      <documentStyle>rpc</documentStyle>
+      <soapAction/>
+      <namespaces>
+         <SOAPNamespace>http://schemas.xmlsoap.org/wsdl/soap/</SOAPNamespace>
+         <SOAPNamespacePrefix>soap</SOAPNamespacePrefix>
+         <EnvelopeNamespace>http://schemas.xmlsoap.org/soap/envelope/</EnvelopeNamespace>
+         <EnvelopeNamespacePrefix>env</EnvelopeNamespacePrefix>
+         <EncodingNamespace>http://schemas.xmlsoap.org/soap/encoding/</EncodingNamespace>
+         <EncodingNamespacePrefix>soapenc</EncodingNamespacePrefix>
+      </namespaces>
+      <control>http://localhost:22155</control>
+   </System>
+   <Request name="dynamicWriteFile"
+            namespace="urn:Services.URLService.URLPortType.URLPortType"
+            prefix="ns3">
+      <Parameter>
+         <contentString nil="true" type="Base Types.String"/>
+         <outputFile nil="true" type="Base Types.String"/>
+      </Parameter>
+   </Request>
+</Testcase>

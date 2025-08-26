@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Mapping id="im@_670312791h-1891608846">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-1891608846">
+      <Set source="3" target="0"/>
+      <Set source="2" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h454366589">
+      <Set source="3" target="0"/>
+      <Set source="2" target="3"/>
+      <Set source="4" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h-783813320">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-783813320">
+      <Set source="4" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1893294858">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1893294858">
+      <Set source="0" target="5"/>
+   </Mapping>
+   <Mapping id="om_670312791h2034990149">
+      <Set source="5" target="0"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-1891608846">
+      <Set source="concat...f_670312791h-1342512420.0_1" statement="1" target="3"/>
+      <Set source="value...writeFileURLAlias__getMethodFromAlias" statement="2" target="2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-783813320">
+      <Set source="transcodeToBlob...f_670312791h699421289.0_1" statement="1" target="4"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1590375509">
+      <Set source="3" target="0"/>
+      <Set source="4" target="3"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1590375509">
+      <Set source="0" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h568157357">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h568157357">
+      <Set source="2" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1261554098">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1261554098">
+      <Set source="3" target="0"/>
+      <Set source="4" target="1"/>
+   </Mapping>
+   <Mapping id="om_670312791h767087784">
+      <Set source="2" target="0"/>
+   </Mapping>
+   <Mapping id="sm_670312791h568157357">
+      <Set source="transcodeToString...f_670312791h139731748.0_1" statement="1" target="2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h1261554098">
+      <Set source="concat...f_670312791h1652372066.0_1" statement="1" target="3"/>
+      <Set source="value...fileURLAlias__getMethodFromAlias" statement="2" target="4"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-1712099787">
+      <Set source="0" target="1"/>
+      <Set source="2" target="2"/>
+      <Set source="1" target="3"/>
+   </Mapping>
+   <Mapping id="im@_670312791h854019049">
+      <Set source="1" target="1"/>
+      <Set source="3" target="2"/>
+      <Set source="2" target="3"/>
+      <Set source="4" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h854019049">
+      <Set source="0" target="1"/>
+      <Set source="4" target="0"/>
+   </Mapping>
+   <Mapping id="om_670312791h-1284956577">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="sm_670312791h854019049">
+      <Set source="transcodeToString...f_670312791h159950468.0_1" statement="1" target="0"/>
+      <Call source="log...f_670312791h159950468.2_1" statement="2"/>
+      <Set source="apply...f_670312791h159950468.7_1" statement="3" target="4"/>
+      <Call source="log...f_670312791h159950468.10_1" statement="4"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-1047594736">
+      <Set source="1" target="0"/>
+      <Set source="2" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h13558389">
+      <Set source="1" target="0"/>
+      <Set source="2" target="1"/>
+   </Mapping>
+   <Mapping id="om@_670312791h13558389">
+      <Set source="0" target="0" targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="im@_670312791h-857694220">
+      <Set source="0" target="0" targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-857694220">
+      <Set source="3" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h725022034">
+      <Set source="3" target="1"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-1047594736">
+      <Set source="value...f_670312791h-1562558937.0_1" statement="1" target="1"/>
+      <Set source="value...f_670312791h-1562558937.1_1" statement="2" target="2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h13558389">
+      <Set source="create...f_670312791h1651258471.0_1" statement="1" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address"/>
+      <Set source="1" statement="2" target="0.1"
+           targetDataItem="urn:Services.URLService.Classes.Address"/>
+      <Set source="2" statement="3" target="0.2"
+           targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-857694220">
+      <Set source="classToXML...f_670312791h-934772055.0_1" statement="1" target="3"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1344101286">
+      <Set source="2" target="1"/>
+      <Set source="5" target="2"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1344101286">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h-2043828010">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-2043828010">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h856863025">
+      <Set source="4" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h856863025">
+      <Set source="2" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h698288153">
+      <Set source="3" target="0"
+           targetDataItem="urn:Services.URLService.Classes.PostInput"/>
+   </Mapping>
+   <Mapping id="om@_670312791h698288153">
+      <Set source="4" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1942830604">
+      <Set source="6" target="0"
+           targetDataItem="urn:Base_Components.Add_Ons.URL.HeaderField"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1942830604">
+      <Set source="3" target="0"
+           targetDataItem="urn:Services.URLService.Classes.PostInput"/>
+      <Set source="5" target="1"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-375417749">
+      <Set source="6" target="0"
+           targetDataItem="urn:Base_Components.Add_Ons.URL.HeaderField"/>
+   </Mapping>
+   <Mapping id="om_670312791h-1178670409">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-2043828010">
+      <Set source="transcodeToString...f_670312791h-835270673.0_1" statement="1"
+           target="1"/>
+   </Mapping>
+   <Mapping id="sm_670312791h856863025">
+      <Set source="transcodeToBlob...f_670312791h801925483.0_1" statement="1" target="2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h698288153">
+      <Set source="concat...f_670312791h-1295668566.0_1" statement="1" target="4"/>
+   </Mapping>
+   <Mapping id="sm_670312791h1942830604">
+      <Set source="create...f_670312791h-1678806678.0_1" statement="1" target="3"
+           targetDataItem="urn:Services.URLService.Classes.PostInput"/>
+      <Set source="create...f_670312791h-1678806678.1_1" statement="2" target="5"/>
+      <Append source="6" statement="3" target="5"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-375417749">
+      <Set source="create...f_670312791h317860335.0_1" statement="1" target="6"
+           targetDataItem="urn:Base_Components.Add_Ons.URL.HeaderField"/>
+      <Set source="value...f_670312791h317860335.1_1" statement="2" target="6.0"
+           targetDataItem="urn:Base_Components.Add_Ons.URL.HeaderField"/>
+      <Set source="value...f_670312791h317860335.2_1" statement="3" target="6.1"
+           targetDataItem="urn:Base_Components.Add_Ons.URL.HeaderField"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1396395218">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="im@_670312791h-469572568">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-469572568">
+      <Set source="1" target="0" targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="om_670312791h-1687740438">
+      <Set source="1" target="0" targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-469572568">
+      <Set source="create...f_670312791h-22734780.0_1" statement="1" target="1"
+           targetDataItem="urn:Services.URLService.Classes.Address"/>
+      <Set source="xmlToClass...f_670312791h-22734780.1_1" statement="2" target="1"
+           targetDataItem="urn:Services.URLService.Classes.Address"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-16783892">
+      <Set source="0" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h499879062">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h499879062">
+      <Set source="0" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h925682261">
+      <Set source="1" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h925682261">
+      <Set source="2" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example2"/>
+   </Mapping>
+   <Mapping id="om_670312791h-811868984">
+      <Set source="0" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example1"/>
+      <Set source="2" target="1"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h499879062">
+      <Set source="create...f_670312791h-228322622.0_1" statement="1" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example1"/>
+      <Set source="xmlToClass...f_670312791h-228322622.1_1" statement="2" target="0"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example1"/>
+   </Mapping>
+   <Mapping id="sm_670312791h925682261">
+      <Set source="create...f_670312791h-2098804763.0_1" statement="1" target="2"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example2"/>
+      <Set source="xmlToClass...f_670312791h-2098804763.1_1" statement="2" target="2"
+           targetDataItem="urn:Services.URLService.Classes.Address2Example2"/>
+   </Mapping>
+   <Mapping id="im@_670312791h1140491156">
+      <Set source="1" target="0"/>
+      <Set source="2" target="3"/>
+   </Mapping>
+   <Mapping id="om@_670312791h1140491156">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h817785504">
+      <Set source="1" target="0"/>
+      <Set source="2" target="1"/>
+   </Mapping>
+   <Mapping id="im@_670312791h-898720078">
+      <Set source="0" target="0"/>
+   </Mapping>
+   <Mapping id="om@_670312791h-898720078">
+      <Set source="3" target="0"/>
+   </Mapping>
+   <Mapping id="om_670312791h1718565007">
+      <Set source="3" target="0"/>
+   </Mapping>
+   <Mapping id="sm_670312791h817785504">
+      <Set source="value...f_670312791h1310922.0_1" statement="1" target="1"/>
+      <Set source="value...f_670312791h1310922.1_1" statement="2" target="2"/>
+   </Mapping>
+   <Mapping id="sm_670312791h-898720078">
+      <Set source="transcodeToString...f_670312791h1672509263.0_1" statement="1"
+           target="3"/>
+   </Mapping>
+</Mappings>

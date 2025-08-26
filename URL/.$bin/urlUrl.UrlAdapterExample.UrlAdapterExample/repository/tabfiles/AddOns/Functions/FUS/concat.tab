@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Function>
+      <ID>concat...f_670312791h-1342512420.0_1</ID>
+      <Parameters>value...writeFileURLAlias__getProtocolFromAlias;value...f_670312791h-1342512420.2_1;value...writeFileURLAlias__getHostFromAlias;value...f_670312791h-1342512420.4_1;1</Parameters>
+   </Function>
+   <Function>
+      <ID>concat...f_670312791h1652372066.0_1</ID>
+      <Parameters>value...fileURLAlias__getProtocolFromAlias;value...f_670312791h1652372066.2_1;value...fileURLAlias__getHostFromAlias;value...f_670312791h1652372066.4_1;0</Parameters>
+   </Function>
+   <Function>
+      <ID>concat...f_670312791h159950468.8_1</ID>
+      <Parameters>0.0;value...f_670312791h159950468.9_1;0.1</Parameters>
+   </Function>
+   <Function>
+      <ID>concat...f_670312791h-1295668566.0_1</ID>
+      <Parameters>3.1;3.0</Parameters>
+   </Function>
+</Functions>

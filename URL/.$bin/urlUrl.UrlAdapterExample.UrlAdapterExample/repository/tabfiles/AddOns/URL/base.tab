@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><URL_AddOn xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <Request Name="Write_File..._670312791|_f0a0347_1082472548226_747257_268"/>
+   <Request Name="Read_File..._670312791|mrassinger_1058888312827_562330_100"/>
+   <Request Name="Retrieve_Page_from_the_WWW..._670312791|jrombach_1049897310299_904806_148">
+      <URL>https://doc.scheer-pas.com/display/BRIDGE/Bridging+in+a+Nutshell</URL>
+      <Method>GET</Method>
+   </Request>
+   <Request Name="POST_XML_Message..._670312791|_f0a0347_1082537051353_784429_199">
+      <URL>file:///./tmp/new_address.xml</URL>
+      <Method>POST</Method>
+   </Request>
+   <Request Name="POST_Content..._670312791|mrassinger_1057932635089_132371_13">
+      <URL>http://yourHTTPServer/./tmp/postresult.htm</URL>
+      <Method>POST</Method>
+   </Request>
+   <Request Name="GET_XML_page..._670312791|_f0a0347_1082531233478_881951_162">
+      <URL>https://doc.scheer-pas.com/download/attachments/2286600/address.xml</URL>
+      <Method>GET</Method>
+   </Request>
+   <Request Name="GET_XML_File..._670312791|_f0a0347_1093520656555_541655_131">
+      <URL>https://doc.scheer-pas.com/download/attachments/2286600/address2.xml</URL>
+      <Method>GET</Method>
+   </Request>
+   <Request Name="Post_Content_and_Retrieve_Response..._670312791|mrassinger_1057933326042_505614_310">
+      <URL>sftp://192.168.1.9:22/</URL>
+      <Method>GET</Method>
+      <Authentication>
+                     <Username>tester</Username>
+                     <Password>password</Password>
+                  </Authentication>
+   </Request>
+</URL_AddOn>

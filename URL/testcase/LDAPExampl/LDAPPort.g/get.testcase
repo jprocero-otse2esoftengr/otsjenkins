@@ -1,0 +1,14 @@
+#Wed Jan 30 11:37:00 CET 2013
+use.inspection.list=false
+control.url=http\://localhost\:21113
+last.run.inspection={}
+inspection={}
+location.custom=http\://localhost\:11113/Services/LDAPService/LDAPPort/LDAPPort
+trace.maxsize=10
+request.timeout=180
+trace.enabled=true
+last.run.trace.mode=-1
+trace.mode=-1
+property.trace.ignore.all.not.inspected=false
+location=http\://localhost\:11113/Services/LDAPService/LDAPPort/LDAPPort
+description=

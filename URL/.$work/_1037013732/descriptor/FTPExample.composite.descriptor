@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deployment name="FTPExample">
+   <Configurations>
+      <Configuration category="E2E Examples" classToXMLDefaultRootName="Default"
+                     classifierID="_1037013732|_17_0_6_b6602e5_1359461978196_428659_13712"
+                     classifierName="FTPExample"
+                     control="${global_e2e_configuration_controller_Port}"
+                     host="localhost"
+                     id="_1037013732|_17_0_6_b6602e5_1359461978196_428659_13712"
+                     name="FTPExample"
+                     umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|_17_0_6_b6602e5_1359461978149_923526_13688~_1037013732|_17_0_6_b6602e5_1359461978196_77676_13713~_1037013732|_17_0_6_b6602e5_1359461978196_428659_13712"
+                     version="7.0.0">
+         <PersistentStateConfiguration>
+            <Data>
+               <WorkerLimit>${ALIAS_Persistent State_WorkerLimit}</WorkerLimit>
+               <Owner>${ALIAS_Persistent State_Owner}</Owner>
+            </Data>
+            <Substitutions>
+               <Substitute default="2" label="Persistent State: WorkerLimit: "
+                           variableName="ALIAS_Persistent State_WorkerLimit"/>
+               <Substitute default="FTPExample" label="Persistent State: Owner: "
+                           variableName="ALIAS_Persistent State_Owner"/>
+            </Substitutions>
+         </PersistentStateConfiguration>
+         <GlobalSAPSettings DefaultConnectionPoolSize="10" FieldPadding="NEVER" ServerWorkerThreads="1"/>
+         <CompilerInformation>
+            <BuildTime millis="1754364009491">Tue, Aug 5, 2025, 11:20:09 SGT</BuildTime>
+            <Compiler version="7.4.0"/>
+            <Builder runtime="2019.3" version="7.4.0"/>
+         </CompilerInformation>
+         <Services>
+            <Service externalURL="http://${wsdl_host_urn:Component_View.Composites.FTPExample.FTPService}:${addOn_SEI_HTTP_Service_FTPService_Port}"
+                     id="_1037013732|_17_0_6_b6602e5_1359461978196_283587_13724"
+                     instanceName="FTPService"
+                     label="FTPService:FTPService"
+                     name="FTPService"
+                     namespace="urn:Component_View.Composites"
+                     package="Component_View.Composites.FTPExample"
+                     port="${addOn_SEI_HTTP_Service_FTPService_Port}"
+                     protocol="http"
+                     stereotype="E2ESOAPService"
+                     umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|_17_0_6_b6602e5_1359461978149_923526_13688~_1037013732|_17_0_6_b6602e5_1359461978196_77676_13713~_1037013732|_17_0_6_b6602e5_1359461978196_428659_13712~_1037013732|_17_0_6_b6602e5_1359461978196_283587_13724"
+                     url="http://NoHostInfo:${addOn_SEI_HTTP_Service_FTPService_Port}"
+                     wsdl="true"
+                     wsdlServicePath="/FTPService"
+                     wsdlURI="http://${server_hostname}:${addOn_SEI_HTTP_Service_FTPService_Port}/FTPService?wsdl">
+               <Documentation/>
+               <Ports>
+                  <Port enabledID="addOn_FTPService.FTPServicePort_Enabled"
+                        escapedPath="/FTPService/FTPServicePort"
+                        instanceName="FTPServicePort"
+                        name="FTPServicePort"
+                        package="Services.FTPService.FTPServicePort"
+                        path="/FTPService/FTPServicePort"/>
+               </Ports>
+            </Service>
+         </Services>
+         <Substitutions name="substitutions">
+            <Substitute definedElsewhere="true" target="deploy.xml" template="deploy.xml"
+                        variableName="addOn_SEI_HTTP_Service_FTPService_Port"/>
+            <Substitute definedElsewhere="true" target="deploy.xml" template="deploy.xml"
+                        variableName="global_e2e_configuration_controller_Port"/>
+         </Substitutions>
+         <Aliases>
+            <Alias name="getFile" path="directory/filename" type="URL">
+               <DeployedServiceArtifact id="_1037013732|_17_0_6_b6602e5_1359461978274_601311_13748" name="getFile"
+                                        umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|PA_http://www.e2e.ch/bridge/template/packagesAliases~_1037013732|_17_0_6_b6602e5_1359461978274_601311_13748"/>
+               <Resource id="_1037013732|_17_0_6_b6602e5_1359461978274_601311_13748" name="getFile"
+                         stereotype="URL"/>
+               <Location host="Enter your own FTP server ..." method="GET" path="directory/filename"
+                         port=""
+                         protocol="ftp"
+                         url="ftp://Enter your own FTP server .../directory/filename"/>
+               <Data>
+                  <URL>${ALIAS_getFile_URL}</URL>
+                  <Method>${ALIAS_getFile_Method}</Method>
+                  <Authentication>
+                     <Username>${ALIAS_getFile_Authentication_Username}</Username>
+                     <Password xmlns:eml="http://e2e.ch/bridge/macroLanguage">${ALIAS_getFile_Authentication_Password}</Password>
+                  </Authentication>
+               </Data>
+               <Substitutions>
+                  <Substitute default="ftp://Enter your own FTP server .../directory/filename"
+                              label="getFile: URL: "
+                              variableName="ALIAS_getFile_URL"/>
+                  <Substitute default="GET" label="getFile: Method: " variableName="ALIAS_getFile_Method"/>
+                  <Substitute default="user" label="getFile: Authentication: Username: "
+                              variableName="ALIAS_getFile_Authentication_Username"/>
+                  <Substitute default="password" label="getFile: Authentication: Password: " type="password"
+                              variableName="ALIAS_getFile_Authentication_Password"/>
+               </Substitutions>
+            </Alias>
+            <Alias name="getDir" path="directory/" type="URL">
+               <DeployedServiceArtifact id="_1037013732|_17_0_6_b6602e5_1359461978290_184284_13762" name="getDir"
+                                        umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|PA_http://www.e2e.ch/bridge/template/packagesAliases~_1037013732|_17_0_6_b6602e5_1359461978290_184284_13762"/>
+               <Resource id="_1037013732|_17_0_6_b6602e5_1359461978290_184284_13762" name="getDir"
+                         stereotype="URL"/>
+               <Location host="Enter your own FTP server ..." method="LIST" path="directory/" port=""
+                         protocol="ftp"
+                         url="ftp://Enter your own FTP server .../directory/"/>
+               <Data>
+                  <URL>${ALIAS_getDir_URL}</URL>
+                  <Method>${ALIAS_getDir_Method}</Method>
+                  <Authentication>
+                     <Username>${ALIAS_getDir_Authentication_Username}</Username>
+                     <Password xmlns:eml="http://e2e.ch/bridge/macroLanguage">${ALIAS_getDir_Authentication_Password}</Password>
+                  </Authentication>
+               </Data>
+               <Substitutions>
+                  <Substitute default="ftp://Enter your own FTP server .../directory/" label="getDir: URL: "
+                              variableName="ALIAS_getDir_URL"/>
+                  <Substitute default="LIST" label="getDir: Method: " variableName="ALIAS_getDir_Method"/>
+                  <Substitute default="user" label="getDir: Authentication: Username: "
+                              variableName="ALIAS_getDir_Authentication_Username"/>
+                  <Substitute default="password" label="getDir: Authentication: Password: " type="password"
+                              variableName="ALIAS_getDir_Authentication_Password"/>
+               </Substitutions>
+            </Alias>
+            <Alias name="putFile" path="directory/filename" type="URL">
+               <DeployedServiceArtifact id="_1037013732|_17_0_6_b6602e5_1359461978305_741564_13776" name="putFile"
+                                        umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|PA_http://www.e2e.ch/bridge/template/packagesAliases~_1037013732|_17_0_6_b6602e5_1359461978305_741564_13776"/>
+               <Resource id="_1037013732|_17_0_6_b6602e5_1359461978305_741564_13776" name="putFile"
+                         stereotype="URL"/>
+               <Location host="Enter your own FTP server ..." method="POST" path="directory/filename"
+                         port=""
+                         protocol="ftp"
+                         url="ftp://Enter your own FTP server .../directory/filename"/>
+               <Data>
+                  <URL>${ALIAS_putFile_URL}</URL>
+                  <Method>${ALIAS_putFile_Method}</Method>
+                  <Authentication>
+                     <Username>${ALIAS_putFile_Authentication_Username}</Username>
+                     <Password xmlns:eml="http://e2e.ch/bridge/macroLanguage">${ALIAS_putFile_Authentication_Password}</Password>
+                  </Authentication>
+               </Data>
+               <Substitutions>
+                  <Substitute default="ftp://Enter your own FTP server .../directory/filename"
+                              label="putFile: URL: "
+                              variableName="ALIAS_putFile_URL"/>
+                  <Substitute default="POST" label="putFile: Method: " variableName="ALIAS_putFile_Method"/>
+                  <Substitute default="user" label="putFile: Authentication: Username: "
+                              variableName="ALIAS_putFile_Authentication_Username"/>
+                  <Substitute default="password" label="putFile: Authentication: Password: " type="password"
+                              variableName="ALIAS_putFile_Authentication_Password"/>
+               </Substitutions>
+            </Alias>
+            <Alias name="getDirMacro" path="" type="URL">
+               <DeployedServiceArtifact id="_1037013732|_17_0_6_b6602e5_1359461978321_474903_13790" name="getDirMacro"
+                                        umlLocation="_1037013732|ROOT_MODEL_XMI.ID~_1037013732|PA_http://www.e2e.ch/bridge/template/packagesAliases~_1037013732|_17_0_6_b6602e5_1359461978321_474903_13790"/>
+               <Resource id="_1037013732|_17_0_6_b6602e5_1359461978321_474903_13790" name="getDirMacro"
+                         stereotype="URL"/>
+               <Location host="Enter your own FTP server ..." method="LIST" path="" port="21"
+                         protocol="ftp"
+                         url="ftp://Enter your own FTP server ...:21"/>
+               <Data>
+                  <URL>${ALIAS_getDirMacro_URL}</URL>
+                  <Method>${ALIAS_getDirMacro_Method}</Method>
+                  <Authentication>
+                     <Username>${ALIAS_getDirMacro_Authentication_Username}</Username>
+                     <Password xmlns:eml="http://e2e.ch/bridge/macroLanguage">${ALIAS_getDirMacro_Authentication_Password}</Password>
+                  </Authentication>
+               </Data>
+               <Substitutions>
+                  <Substitute default="ftp://Enter your own FTP server ...:21" label="getDirMacro: URL: "
+                              variableName="ALIAS_getDirMacro_URL"/>
+                  <Substitute default="LIST" label="getDirMacro: Method: "
+                              variableName="ALIAS_getDirMacro_Method"/>
+                  <Substitute default="user" label="getDirMacro: Authentication: Username: "
+                              variableName="ALIAS_getDirMacro_Authentication_Username"/>
+                  <Substitute default="password" label="getDirMacro: Authentication: Password: "
+                              type="password"
+                              variableName="ALIAS_getDirMacro_Authentication_Password"/>
+               </Substitutions>
+            </Alias>
+         </Aliases>
+      </Configuration>
+   </Configurations>
+   <Libraries/>
+</Deployment>

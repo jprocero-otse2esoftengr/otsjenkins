@@ -1,0 +1,14 @@
+#Wed Jan 30 10:43:07 CET 2013
+use.inspection.list=false
+control.url=http\://localhost\:22146
+last.run.inspection={}
+inspection={}
+location.custom=http\://localhost\:12146/Services/FTPService/FTPServicePort/FTPServicePort
+trace.maxsize=10
+request.timeout=180
+trace.enabled=true
+last.run.trace.mode=-1
+trace.mode=-1
+property.trace.ignore.all.not.inspected=false
+location=http\://localhost\:12146/Services/FTPService/FTPServicePort/FTPServicePort
+description=

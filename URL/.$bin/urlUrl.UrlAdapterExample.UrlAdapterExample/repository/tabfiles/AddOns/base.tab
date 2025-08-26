@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AddOn_Roster xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+   <AddOn>
+      <Name>Flows</Name>
+   </AddOn>
+   <AddOn>
+      <Name>Functions</Name>
+   </AddOn>
+   <AddOn>
+      <Name>XML_Function</Name>
+   </AddOn>
+   <AddOn>
+      <Name>SOAP_AddOn</Name>
+   </AddOn>
+   <AddOn>
+      <Name>URL_AddOn</Name>
+   </AddOn>
+   <AddOn>
+      <Name>LOG_AddOn</Name>
+   </AddOn>
+</AddOn_Roster>

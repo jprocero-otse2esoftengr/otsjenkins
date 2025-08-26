@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="1815560242" name="Query LDAP"
+             original="Query_LDAP..._1901562913|_9_5_1_be002f9_1141637082344_666348_920"
+             package="Services.LDAPService.LDAPPort.LDAPPort"
+             type="URLAdapter"/>
+   <UniqueId id="450606310" name="Query LDAP"
+             original="Query_LDAP..._1901562913|_9_5_1_be002f9_1141290397256_710978_0"
+             package="Services.LDAPService.LDAPPort.LDAPPort"
+             type="URLAdapter"/>
+</UniqueIds>

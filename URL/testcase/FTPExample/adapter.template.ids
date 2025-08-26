@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueIds>
+   <UniqueId id="_1128766988" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1140194491889_384619_918"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_627250389" name="ftp get file"
+             original="ftp_get_file..._1037013732|_9_5_1_f0a0347_1189156945851_863942_1594"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_2060011609" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_1_f0a0347_1189152494296_75860_808"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_930789673" name="Stream data from a file and put it on a ftp server"
+             original="Stream_data_from_a_file_and_put_it_on_a_ftp_server..._1037013732|_14_0_1_32690623_1249655535171_699545_10219"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="1950976202" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1140188833124_691893_103"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="1352819458" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1154097098010_646007_682"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_923644684" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1150351550640_6036_74"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_1366847680" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1150718403163_210833_463"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="1905816190" name="call ftp readFile"
+             original="call_ftp_readFile..._1037013732|_9_5_914028c_1150809886043_619955_254"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="1434447158" name="call ftp"
+             original="call_ftp..._1037013732|_9_5_914028c_1150699710797_725835_130"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_217471275" name="ftp putFile"
+             original="ftp_putFile..._1037013732|_9_5_914028c_1153735705901_67857_176"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_800685111" name="call ftp moveFile"
+             original="call_ftp_moveFile..._1037013732|_9_5_914028c_1150881202012_824704_142"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+   <UniqueId id="_2032113917"
+             name="Get data stream from a ftp server and put it into a file"
+             original="Get_data_stream_from_a_ftp_server_and_put_it_into_a_file..._1037013732|_14_0_1_32690623_1249655184328_761291_9183"
+             package="Services.FTPService.FTPServicePort.FTPServicePort"
+             type="URLAdapter"/>
+</UniqueIds>

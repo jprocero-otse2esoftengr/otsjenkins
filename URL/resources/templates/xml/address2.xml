@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<address id="4711">
+	<company>Wishes Unltd.</company>
+	<name>Oliver Twist</name>
+	<street id="4711-1">13, Coal Street</street>
+	<city id="4711-2">New York, NY 10017, USA</city>
+</address>

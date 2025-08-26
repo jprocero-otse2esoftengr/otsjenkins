@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testcase operation="getFileAsStream" porttype="FTPServicePort" service="FTPService">
+   <System>
+      <location>http://localhost:12146/Services/FTPService/FTPServicePort/FTPServicePort</location>
+      <documentStyle>rpc</documentStyle>
+      <soapAction/>
+      <control>http://localhost:22146</control>
+   </System>
+   <Request name="getFileAsStream"
+            namespace="urn:Services.FTPService.FTPServicePort.FTPServicePort"
+            prefix="ns4">
+      <Parameter>
+         <streamTarget nil="true" type="Base Types.String"/>
+      </Parameter>
+   </Request>
+</Testcase>

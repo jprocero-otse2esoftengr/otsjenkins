@@ -13,7 +13,8 @@
                 // Use bat for Windows
                 bat '''
                     echo Compiling xUML model...
-                    java -jar tools/xumlc-7.20.0.jar -i urlUrl.xml -o build/
+                    mkdir build
+                    java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
                 '''
             }
         }

@@ -20,11 +20,17 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat '''
-                    echo Compiling xUML model...
-                    mkdir build
-                    java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
-                '''
+                script {
+                    // Capture build logs
+                    def buildOutput = bat(script: '''
+                        echo Compiling xUML model...
+                        mkdir build
+                        java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
+                    ''', returnStdout: true).trim()
+                    
+                    // Store build output for later use
+                    env.BUILD_LOGS = buildOutput
+                }
                 archiveArtifacts artifacts: 'URL/repository/**/*,build/**/*', fingerprint: true
             }
         }
@@ -35,7 +41,7 @@ pipeline {
                     steps {
                         script {
                             if (params.TEST_MODE in ['basic', 'regression', 'full']) {
-                                bat '''
+                                def unitTestOutput = bat(script: '''
                                     echo Running Unit Tests...
                                     echo Testing URL Adapter functionality...
                                     echo Testing FTP functionality...
@@ -54,7 +60,9 @@ pipeline {
                                         echo FAILURE > test-results\\unit-tests.txt
                                         exit /b 1
                                     )
-                                '''
+                                ''', returnStdout: true).trim()
+                                
+                                env.UNIT_TEST_LOGS = unitTestOutput
                             }
                         }
                     }
@@ -69,7 +77,7 @@ pipeline {
                     steps {
                         script {
                             if (params.TEST_MODE in ['regression', 'full']) {
-                                bat '''
+                                def integrationTestOutput = bat(script: '''
                                     echo Running Integration Tests...
                                     
                                     REM Test URL Adapter test cases
@@ -92,7 +100,9 @@ pipeline {
                                         echo FAILURE: FTP test cases missing
                                         echo FAILURE >> test-results\\integration-tests.txt
                                     )
-                                '''
+                                ''', returnStdout: true).trim()
+                                
+                                env.INTEGRATION_TEST_LOGS = integrationTestOutput
                             }
                         }
                     }
@@ -107,7 +117,7 @@ pipeline {
                     steps {
                         script {
                             if (params.TEST_MODE == 'full') {
-                                bat '''
+                                def regressionTestOutput = bat(script: '''
                                     echo Running Regression Tests...
                                     
                                     REM Check regression test suite
@@ -129,7 +139,9 @@ pipeline {
                                         echo FAILURE > test-results\\regression-tests.txt
                                         exit /b 1
                                     )
-                                '''
+                                ''', returnStdout: true).trim()
+                                
+                                env.REGRESSION_TEST_LOGS = regressionTestOutput
                             }
                         }
                     }
@@ -202,44 +214,38 @@ pipeline {
         stage('Create Success Report') {
             steps {
                 script {
-                    // Create a nice pure text success report
+                    // Create a success report with real logs
                     def successReport = """
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                           🎉 BUILD SUCCESS REPORT 🎉                        ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║                                                                              ║
-║  ✅ BUILD SUCCESSFUL - Build #${env.BUILD_NUMBER}                           ║
-║                                                                              ║
-║  🎯 WHY THIS BUILD SUCCEEDED:                                               ║
-║     ✅ xUML Compilation: Model compiled successfully                        ║
-║     ✅ Repository Generation: All files created properly                    ║
-║     ✅ Unit Tests: Basic validation passed                                  ║
-║     ✅ Integration Tests: Adapter functionality verified                    ║
-║     ✅ Regression Tests: Test suite validated                               ║
-║     ✅ Artifact Archiving: All files successfully archived                  ║
-║                                                                              ║
-║  📁 GENERATED FILES:                                                        ║
-║     📄 Main Repository: URL/repository/urlUrl/urlUrl.rep                    ║
-║     📄 Generated Java Files: All compiled code                              ║
-║     📊 Test Results: Complete test reports                                  ║
-║     📋 Test Summary: Executive summary                                      ║
-║     📖 File Access Guide: How to download files                             ║
-║                                                                              ║
-║  🔗 ACCESS LINKS:                                                           ║
-║     🌐 Build URL: ${env.BUILD_URL}                                          ║
-║     📁 Artifacts: ${env.BUILD_URL}artifact/                                 ║
-║     📊 Test Results: ${env.BUILD_URL}testReport/                            ║
-║                                                                              ║
-║  🎉 WHAT THIS MEANS:                                                        ║
-║     • Your xUML model is valid and compiles successfully                    ║
-║     • All test cases are properly configured                                ║
-║     • Generated code is ready for use                                       ║
-║     • Team can download files immediately                                   ║
-║     • Pipeline is working perfectly!                                        ║
-║                                                                              ║
-║  📅 Build completed: ${new Date().format("yyyy-MM-dd HH:mm:ss")}           ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+BUILD SUCCESS REPORT
+====================
+
+BUILD SUCCESSFUL - Build #${env.BUILD_NUMBER}
+
+BUILD LOGS:
+${env.BUILD_LOGS ?: 'Build logs not available'}
+
+UNIT TEST LOGS:
+${env.UNIT_TEST_LOGS ?: 'Unit test logs not available'}
+
+INTEGRATION TEST LOGS:
+${env.INTEGRATION_TEST_LOGS ?: 'Integration test logs not available'}
+
+REGRESSION TEST LOGS:
+${env.REGRESSION_TEST_LOGS ?: 'Regression test logs not available'}
+
+GENERATED FILES:
+- Main Repository: URL/repository/urlUrl/urlUrl.rep
+- Generated Java Files: All compiled code
+- Test Results: Complete test reports
+- Test Summary: Executive summary
+- File Access Guide: How to download files
+
+ACCESS LINKS:
+- Build URL: ${env.BUILD_URL}
+- Artifacts: ${env.BUILD_URL}artifact/
+- Test Results: ${env.BUILD_URL}testReport/
+
+Build completed: ${new Date().format("yyyy-MM-dd HH:mm:ss")}
 """
                     
                     writeFile file: 'success-report.txt', text: successReport
@@ -255,10 +261,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Build and Tests Succeeded'
+            echo 'Build and Tests Succeeded'
         }
         failure {
-            echo '❌ Build or Tests Failed - check logs'
+            echo 'Build or Tests Failed - check logs'
         }
         always {
             cleanWs()

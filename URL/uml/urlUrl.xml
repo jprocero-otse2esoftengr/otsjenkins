@@ -18,7 +18,7 @@
 			<packagedElement xmi:type='uml:Artifact' xmi:id='_17_0_6_b6602e5_1359107232705_351453_13857' name='getXMLURLAlias'/>
 			<packagedElement xmi:type='uml:Artifact' xmi:id='_17_0_6_b6602e5_1359107276320_596529_13882' name='getXMLURL2Alias'/>
 			<packagedElement xmi:type='uml:Artifact' xmi:id='_18_0_6_30ce0604_1755191599640_424895_14004' name='URLAlias'/>
-		</packagedElement>vcxcvcv
+		</packagedElement>vcxcvcv`
 		<packagedElement xmi:type='uml:Package' xmi:id='PA_http://www.e2e.ch/bridge/template/packagesService_Implementation' name='Services'>
 			<ownedComment xmi:type='uml:Comment' xmi:id='mrassinger_1026821225235_258508_2173'>
 				<annotatedElement xmi:idref='PA_http://www.e2e.ch/bridge/template/packagesService_Implementation'/>

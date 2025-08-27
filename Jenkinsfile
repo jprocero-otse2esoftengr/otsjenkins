@@ -25,7 +25,7 @@ pipeline {
                     mkdir build
                     java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
                 '''
-                archiveArtifacts artifacts: 'build/**/*', fingerprint: true
+                archiveArtifacts artifacts: 'URL/repository/**/*,build/**/*', fingerprint: true
             }
         }
         
@@ -46,11 +46,11 @@ pipeline {
                                     
                                     REM Run basic validation tests
                                     echo Running basic validation tests...
-                                    if exist "build\\*.java" (
-                                        echo Java files generated successfully
+                                    if exist "URL\\repository\\*" (
+                                        echo Repository files generated successfully
                                         echo SUCCESS > test-results\\unit-tests.txt
                                     ) else (
-                                        echo FAILURE: No Java files generated
+                                        echo FAILURE: No repository files generated
                                         echo FAILURE > test-results\\unit-tests.txt
                                         exit /b 1
                                     )

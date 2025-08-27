@@ -87,17 +87,9 @@ pipeline {
                         echo Compiling URL Adapter Model
                         echo ========================================
                         java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
-                        set COMPILE_EXIT_CODE=%ERRORLEVEL%
-                        echo.
-                        
-                        echo ========================================
-                        echo Compilation Exit Code: %COMPILE_EXIT_CODE%
-                        echo ========================================
-                        
-                        if %COMPILE_EXIT_CODE% EQU 0 (
-                            echo SUCCESS: xUML compilation completed successfully
-                        ) else (
-                            echo ERROR: xUML compilation failed with exit code %COMPILE_EXIT_CODE%
+                        if %ERRORLEVEL% NEQ 0 (
+                            echo ERROR: URL model compilation failed
+                            exit /b 1
                         )
                         echo.
                         
@@ -118,36 +110,10 @@ pipeline {
                         ) else (
                             echo WARNING: No build directory found
                         )
-                        echo.
-                        
-                        echo ========================================
-                        echo Final Status Check
-                        echo ========================================
-                        if exist "URL\\repository\\urlUrl\\urlUrl.rep" (
-                            echo SUCCESS: Repository file generated
-                            dir "URL\\repository\\urlUrl\\urlUrl.rep"
-                        ) else (
-                            echo ERROR: Repository file not generated
-                        )
-                        echo.
-                        
-                        exit /b %COMPILE_EXIT_CODE%
                     ''', returnStdout: true).trim()
                     
                     // Store build output for later use
                     env.BUILD_LOGS = buildOutput
-                    
-                    // Check if compilation was successful
-                    def compilationSuccessful = buildOutput.contains('SUCCESS: xUML compilation completed successfully')
-                    def repositoryFileGenerated = fileExists 'URL/repository/urlUrl/urlUrl.rep'
-                    
-                    echo "Compilation successful: ${compilationSuccessful}"
-                    echo "Repository file generated: ${repositoryFileGenerated}"
-                    
-                    // If compilation failed, fail the build
-                    if (!compilationSuccessful || !repositoryFileGenerated) {
-                        error "xUML compilation failed! Check the build logs for details."
-                    }
                     
                     // Check if .rep file was updated
                     def newRepFileExists = fileExists 'URL/repository/urlUrl/urlUrl.rep'
@@ -170,8 +136,6 @@ pipeline {
                     env.NEW_TIMESTAMP = newTimestamp
                     env.OLD_SIZE = oldSize
                     env.NEW_SIZE = newSize
-                    env.COMPILATION_SUCCESSFUL = compilationSuccessful.toString()
-                    env.REPOSITORY_FILE_GENERATED = repositoryFileGenerated.toString()
                 }
                 archiveArtifacts artifacts: 'URL/repository/**/*,build/**/*', fingerprint: true
             }
@@ -396,10 +360,6 @@ BUILD SUCCESS REPORT
 ====================
 
 BUILD SUCCESSFUL - Build #${env.BUILD_NUMBER}
-
-COMPILATION STATUS:
-Compilation Successful: ${env.COMPILATION_SUCCESSFUL}
-Repository File Generated: ${env.REPOSITORY_FILE_GENERATED}
 
 REPOSITORY FILE UPDATE STATUS:
 File Updated: ${env.REP_FILE_UPDATED}

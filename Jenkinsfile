@@ -27,6 +27,22 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    // Debug: Check current directory and files
+                    def currentDir = bat(script: 'cd && echo Current directory: %CD%', returnStdout: true).trim()
+                    echo "Current directory: ${currentDir}"
+                    
+                    // Debug: List files in workspace
+                    def workspaceFiles = bat(script: 'dir', returnStdout: true).trim()
+                    echo "Workspace files: ${workspaceFiles}"
+                    
+                    // Debug: Check if xUML compiler exists
+                    def compilerExists = fileExists 'tools/xumlc-7.20.0.jar'
+                    echo "xUML compiler exists: ${compilerExists}"
+                    
+                    // Debug: Check if xUML model exists
+                    def modelExists = fileExists 'URL/uml/urlUrl.xml'
+                    echo "xUML model exists: ${modelExists}"
+                    
                     // Check if .rep file exists before compilation
                     def repFileExists = fileExists 'URL/repository/urlUrl/urlUrl.rep'
                     def oldTimestamp = ''
@@ -38,39 +54,67 @@ pipeline {
                         oldSize = fileInfo.split('\n').find { it.contains('bytes') }
                     }
                     
-                    // Capture build logs for multiple models
+                    // Capture build logs for multiple models with error handling
                     def buildOutput = bat(script: '''
-                        echo Compiling xUML models...
+                        echo ========================================
+                        echo DEBUG: Starting xUML Compilation
+                        echo ========================================
+                        echo Current directory: %CD%
+                        echo.
+                        
+                        echo Checking Java installation...
+                        java -version
+                        echo.
+                        
+                        echo Checking xUML compiler...
+                        if exist "tools\\xumlc-7.20.0.jar" (
+                            echo xUML compiler found
+                        ) else (
+                            echo ERROR: xUML compiler not found
+                            exit /b 1
+                        )
+                        echo.
+                        
+                        echo Checking xUML model...
+                        if exist "URL\\uml\\urlUrl.xml" (
+                            echo xUML model found
+                        ) else (
+                            echo ERROR: xUML model not found
+                            exit /b 1
+                        )
+                        echo.
+                        
+                        echo Creating build directory...
                         mkdir build
+                        echo.
                         
                         echo ========================================
                         echo Compiling URL Adapter Model
                         echo ========================================
                         java -jar tools/xumlc-7.20.0.jar -uml URL/uml/urlUrl.xml
-                        
-                        echo ========================================
-                        echo Compiling FTP Adapter Model (if exists)
-                        echo ========================================
-                        if exist "URL/uml/ftpUrl.xml" (
-                            java -jar tools/xumlc-7.20.0.jar -uml URL/uml/ftpUrl.xml
-                        ) else (
-                            echo FTP model not found, skipping...
+                        if %ERRORLEVEL% NEQ 0 (
+                            echo ERROR: URL model compilation failed
+                            exit /b 1
                         )
-                        
-                        echo ========================================
-                        echo Compiling LDAP Adapter Model (if exists)
-                        echo ========================================
-                        if exist "URL/uml/ldapUrl.xml" (
-                            java -jar tools/xumlc-7.20.0.jar -uml URL/uml/ldapUrl.xml
-                        ) else (
-                            echo LDAP model not found, skipping...
-                        )
+                        echo.
                         
                         echo ========================================
                         echo Compilation Summary
                         echo ========================================
                         echo Repository files generated:
-                        dir URL\\repository /s
+                        if exist "URL\\repository" (
+                            dir URL\\repository /s
+                        ) else (
+                            echo WARNING: No repository directory found
+                        )
+                        echo.
+                        
+                        echo Build directory contents:
+                        if exist "build" (
+                            dir build /s
+                        ) else (
+                            echo WARNING: No build directory found
+                        )
                     ''', returnStdout: true).trim()
                     
                     // Store build output for later use
